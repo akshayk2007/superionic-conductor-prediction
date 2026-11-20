@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta name="description" content="Machine learning screening of lithium solid electrolyte candidates using five crystallographic descriptors.">
+  <title>LiScreen | Solid Electrolyte Screening</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+
+
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" id="brandHome">
+      <img src="/logo.png" alt="LiScreen Logo" class="logo">
+      </a>
+      <span class="header-pill"><span class="status-dot" aria-hidden="true"></span> ML Screening Platform</span>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <div class="page-intro">
+      <div class="eyebrow">MATERIALS DISCOVERY / MACHINE LEARNING</div>
+      <h1>Solid electrolyte <span>screening</span>, simplified.</h1>
+      <p>Evaluate lithium-ion solid electrolyte candidates using crystallographic descriptors and a trained machine learning model.</p>
+    </div>
+
+    <nav class="tabs" aria-label="Application sections">
+      <button class="tab-btn active" type="button" data-target="home" aria-selected="true">Overview</button>
+      <button class="tab-btn" type="button" data-target="manual" aria-selected="false">Manual screening</button>
+      <button class="tab-btn" type="button" data-target="cif" aria-selected="false">CIF upload</button>
+      <button class="tab-btn" type="button" data-target="csv" aria-selected="false">CSV batch screening</button>
+    </nav>
+
+    <main>
+      <section id="home" class="panel active" aria-labelledby="home-title">
+        <div class="hero-card">
+          <div class="hero-content">
+            <span class="section-kicker">CRYSTALLOGRAPHY × PREDICTIVE ML</span>
+            <h2 id="home-title">Explore promising Li⁺ conductors faster.</h2>
+            <p>Screen candidates against the superionic classification threshold of ≥ 0.1 mS/cm without running a full experimental evaluation.</p>
+            <button class="primary-btn hero-cta" type="button" id="startScreening">Start screening <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-one"></div><div class="orb orb-two"></div>
+            <div class="crystal crystal-a">Li⁺</div><div class="crystal crystal-b">O</div><div class="crystal crystal-c">Li⁺</div><div class="crystal crystal-d">S</div>
+            <svg viewBox="0 0 280 230" class="bond-lines"><path d="M60 58 L194 58 L240 164 L108 184 Z M60 58 L108 184 M194 58 L108 184" /></svg>
+          </div>
+        </div>
+        <div class="section-heading"><h3>Screening workflows</h3><p>Choose how to provide material descriptors.</p></div>
+        <div class="feature-grid">
+          <button type="button" class="feature-card feature-clickable" data-go="manual">
+            <span class="feature-icon blue-icon" aria-hidden="true">⌘</span><span class="feature-title">Manual descriptors <span class="available-tag">Available</span></span>
+            <span class="feature-description">Input five geometric descriptors and get an instant screening prediction.</span><span class="feature-link">Open screening →</span>
+          </button>
+          <button type="button" class="feature-card feature-clickable" data-go="cif">
+            <span class="feature-icon purple-icon" aria-hidden="true">▧</span><span class="feature-title">CIF files <span class="available-tag">Available</span></span>
+            <span class="feature-description">Automated descriptor extraction from crystal structure files.</span><span class="feature-link">Open screening →</span>
+          </button>
+          <button type="button" class="feature-card feature-clickable" data-go="csv">
+            <span class="feature-icon green-icon" aria-hidden="true">▤</span><span class="feature-title">CSV batches <span class="available-tag">Available</span></span>
+            <span class="feature-description">Run predictions for multiple candidate materials in one batch.</span><span class="feature-link">Open screening →</span>
+          </button>
+        </div>
+        <p class="scientific-note">Research note: Output is a model classification probability, not a measured ionic conductivity value. Experimental validation is still required.</p>
+      </section>
+
+      <section id="manual" class="panel" aria-labelledby="manual-title">
+        <div class="workspace-grid">
+          <div class="surface-card form-card">
+            <div class="card-top"><span class="section-kicker">PREDICTION WORKSPACE</span><span class="step-pill">5 inputs</span></div>
+            <h2 id="manual-title">Manual descriptor screening</h2>
+            <p class="muted">Enter the five crystallographic parameters to evaluate your material candidate.</p>
+            <form id="manualForm">
+              <div class="form-grid">
+                <div class="field"><label for="LASD">Li–anion separation <span>LASD · Å</span></label><input type="number" step="any" id="LASD" name="LASD" value="2.55" required></div>
+                <div class="field"><label for="SBI">Sublattice bond ionicity <span>SBI</span></label><input type="number" step="any" id="SBI" name="SBI" value="12.5" required></div>
+                <div class="field"><label for="AFC">Anion framework coordination <span>AFC</span></label><input type="number" step="any" id="AFC" name="AFC" value="2.72" required></div>
+                <div class="field"><label for="LLSD">Li–Li separation <span>LLSD · Å</span></label><input type="number" step="any" id="LLSD" name="LLSD" value="2.72" required></div>
+                <div class="field"><label for="LLB">Li–Li coordination <span>LLB</span></label><input type="number" step="any" id="LLB" name="LLB" value="5.2" required></div>
+              </div>
+              <div class="form-actions"><button type="submit" id="predictBtn" class="primary-btn">Run prediction <span aria-hidden="true">→</span></button><button type="reset" class="secondary-btn">Clear form</button></div>
+              <p id="formError" class="form-error" role="alert" hidden></p>
+            </form>
+          </div>
+          <aside class="right-stack">
+            <div class="surface-card result-card">
+              <div class="card-top"><span class="section-kicker">MODEL OUTPUT</span><span class="step-pill">Random forest</span></div>
+              <h3>Screening result</h3>
+              <div id="resultPlaceholder" class="result-placeholder"><div class="placeholder-circle" aria-hidden="true">↗</div><strong>Ready to analyze</strong><p>Enter your descriptors and run a prediction to see the result here.</p></div>
+              <div id="resultBox" class="result" aria-live="polite" hidden>
+                <span id="resultStatus" class="result-status"></span>
+                <div id="verdictText" class="verdict"></div>
+                <p id="scoreText" class="score"></p>
+                <div class="progress-track" role="progressbar" aria-label="Superionic classification probability" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="probabilityTrack"><div id="probabilityFill" class="progress-fill"></div></div>
+                <p class="result-disclaimer">Classification probability only. This is not a conductivity measurement.</p>
+              </div>
+            </div>
+            <div class="info-card"><span class="info-icon" aria-hidden="true">i</span><div><strong>About the threshold</strong><p>The classifier predicts whether a candidate belongs to the superionic category (σ ≥ 0.1 mS/cm). Results require scientific validation.</p></div></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="cif" class="panel" aria-labelledby="cif-title">
+        <div class="workspace-grid">
+          <div class="surface-card form-card">
+            <div class="card-top"><span class="section-kicker">AUTOMATED EXTRACTION</span><span class="step-pill">.cif file</span></div>
+            <h2 id="cif-title">CIF crystal screening</h2>
+            <p class="muted">Upload your crystal structure file to automatically calculate Sendek descriptors and run the model.</p>
+            <form id="cifForm">
+              <div class="form-grid" style="grid-template-columns: 1fr;">
+                <div class="field">
+                  <label for="cifFile">Crystal structure file <span>CIF format</span></label>
+                  <input type="file" id="cifFile" accept=".cif" required style="padding: 11px 14px;">
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" id="cifPredictBtn" class="primary-btn">Run prediction <span aria-hidden="true">→</span></button>
+                <button type="reset" class="secondary-btn">Clear file</button>
+              </div>
+              <p id="cifError" class="form-error" role="alert" hidden></p>
+            </form>
+          </div>
+          
+          <aside class="right-stack">
+            <div class="surface-card result-card">
+              <div class="card-top"><span class="section-kicker">MODEL OUTPUT</span><span class="step-pill">Random forest</span></div>
+              <h3>Screening result</h3>
+              
+              <div id="cifResultPlaceholder" class="result-placeholder">
+                <div class="placeholder-circle" aria-hidden="true">⚗</div>
+                <strong>Ready to analyze</strong>
+                <p>Upload a CIF file and run prediction to see extracted descriptors and model scores here.</p>
+              </div>
+              
+              <div id="cifResultBox" class="result" aria-live="polite" hidden>
+                <span id="cifResultStatus" class="result-status"></span>
+                <div id="cifVerdictText" class="verdict"></div>
+                <p id="cifScoreText" class="score"></p>
+                <div class="progress-track" role="progressbar" aria-label="Superionic classification probability" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="cifProbabilityTrack">
+                  <div id="cifProbabilityFill" class="progress-fill"></div>
+                </div>
+                
+                <div class="cif-breakdown" style="margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line);">
+                  <p style="font-weight: 800; font-size: 12px; color: var(--text); margin-bottom: 8px;">Extracted Structure & Descriptors</p>
+                  <p id="cifMetaText" class="score" style="line-height: 1.6;"></p>
+                </div>
+                
+                <p class="result-disclaimer" style="margin-top: 14px;">Extracted via Sendek crystallographic descriptors.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="csv" class="panel" aria-labelledby="csv-title">
+        <div class="workspace-grid">
+          <div class="surface-card form-card">
+            <div class="card-top"><span class="section-kicker">BATCH WORKFLOW</span><span class="step-pill">CSV file</span></div>
+            <h2 id="csv-title">CSV batch screening</h2>
+            <p class="muted">Upload a CSV file containing columns for <strong>LASD, SBI, AFC, LLSD, and LLB</strong> (plus an optional <code>MATERIAL</code> name column) to screen multiple candidates at once.</p>
+            <form id="csvForm">
+              <div class="form-grid" style="grid-template-columns: 1fr;">
+                <div class="field">
+                  <label for="csvFile">Batch dataset file <span>CSV format</span></label>
+                  <input type="file" id="csvFile" accept=".csv" required style="padding: 11px 14px;">
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" id="csvPredictBtn" class="primary-btn">Run batch prediction <span aria-hidden="true">→</span></button>
+                <button type="reset" class="secondary-btn">Clear file</button>
+              </div>
+              <p id="csvError" class="form-error" role="alert" hidden></p>
+            </form>
+          </div>
+          
+          <aside class="right-stack">
+            <div class="surface-card result-card">
+              <div class="card-top"><span class="section-kicker">BATCH OUTPUT</span><span class="step-pill">Summary & Results</span></div>
+              <h3>Batch screening summary</h3>
+              
+              <div id="csvResultPlaceholder" class="result-placeholder">
+                <div class="placeholder-circle" aria-hidden="true">▤</div>
+                <strong>Ready for batch upload</strong>
+                <p>Upload a CSV file with descriptor columns to view batch predictions here.</p>
+              </div>
+              
+              <div id="csvResultBox" class="result" aria-live="polite" hidden>
+                <div id="csvSummaryText" class="score" style="font-weight: 800; margin-bottom: 12px; color: var(--text);"></div>
+                <div class="csv-results-container" style="max-height: 280px; overflow-y: auto; border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fbfdff;">
+                  <table id="csvResultsTable" style="width: 100%; border-collapse: collapse; font-size: 12px;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid var(--line); text-align: left; color: var(--muted);">
+                        <th style="padding: 6px;">Row / Material</th>
+                        <th style="padding: 6px;">Probability</th>
+                        <th style="padding: 6px;">Verdict</th>
+                      </tr>
+                    </thead>
+                    <tbody id="csvTableBody">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+    <footer>LiScreen · Materials discovery research prototype</footer>
+  </div>
+</body>
+</html>
