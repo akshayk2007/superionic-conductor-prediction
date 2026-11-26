@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Screen lithium solid electrolytes from crystallographic files.">
+  <title>IonLab · Lithium electrolyte screening</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" id="skip-navigation" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="#screen" aria-label="IonLab screening">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>IonLab</strong><small>Electrolyte screening</small></span>
+      </a>
+      <nav aria-label="Workspace">
+        <a href="#screen" data-view="screen" aria-current="page">Screening</a>
+        <a href="#compare" data-view="compare">Comparison <span id="comparison-count" class="nav-count" hidden></span></a>
+        <a href="#model" data-view="model">Model results</a>
+      </nav>
+      <button type="button" id="download-report" class="button button-outline" disabled>
+        <span class="download-icon" aria-hidden="true"></span> Download report
+      </button>
+    </div>
+  </header>
+
+  <main class="shell" id="main" tabindex="-1">
+    <section id="screen" data-panel>
+      <section class="hero" aria-labelledby="screen-title">
+        <div class="hero-copy">
+          <p class="hero-label">OBELiX screening model</p>
+          <h1 id="screen-title">Screen lithium<br class="desktop-break"> solid electrolytes.</h1>
+          <p class="hero-description">Upload a crystal structure in <strong>.cif</strong> format. IonLab estimates whether it is a fast lithium-ion conductor and finds similar known materials.</p>
+          <p class="hero-threshold"><strong>Fast</strong> means ionic conductivity <span class="nowrap">≥ 1 × 10<sup>−4</sup> S/cm</span>.</p>
+          <div class="hero-actions">
+            <button type="button" class="button button-sample" id="try-example">Try a sample CIF</button>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <canvas id="hero-crystal" aria-hidden="true"></canvas>
+          <figcaption>Illustrative unit cell</figcaption>
+        </figure>
+      </section>
+
+      <div class="work-grid">
+        <section class="card upload-card" aria-labelledby="upload-title">
+          <div class="card-heading">
+            <h2 id="upload-title">Upload CIF files</h2>
+          </div>
+          <div class="drop-zone" id="drop-zone">
+            <span class="file-icon" aria-hidden="true"></span>
+            <p><strong>Drop crystal structures here</strong></p>
+            <p class="muted">One or more .cif files</p>
+            <button type="button" class="button button-primary" id="browse">Choose files</button>
+            <input type="file" id="file-input" accept=".cif" multiple hidden aria-label="Choose CIF files">
+          </div>
+          <div class="upload-caption">
+            <span id="upload-limits">Up to 20 CIFs per batch · 2 MiB per file</span>
+            <span id="upload-status" role="status" aria-live="polite"></span>
+          </div>
+          <div id="upload-notice" class="callout danger" role="alert" hidden></div>
+        </section>
+
+        <aside class="card model-summary" aria-labelledby="snapshot-title">
+          <div class="summary-top">
+            <span class="stat-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            <h2 id="snapshot-title">Model snapshot</h2>
+          </div>
+          <dl class="summary-list">
+            <div><dt>Classifier</dt><dd id="snapshot-classifier">Random forest</dd></div>
+            <div><dt>Training set</dt><dd id="snapshot-train">478 OBELiX rows</dd></div>
+            <div><dt>Archived CIF test recall</dt><dd id="snapshot-recall">0.50</dd></div>
+          </dl>
+          <a class="text-button" href="#model">View benchmark results</a>
+        </aside>
+      </div>
+      <section id="screened-files" aria-labelledby="screened-title" hidden>
+        <div class="section-heading">
+          <div><h2 id="screened-title" tabindex="-1">Screened files</h2><p class="muted" id="results-count"></p></div>
+          <div class="actions">
+            <button type="button" class="button button-outline" id="clear-results">Clear results</button>
+            <a class="button button-outline" id="compare-results" href="#compare">Compare materials</a>
+          </div>
+        </div>
+        <ul class="result-list" id="results-list"></ul>
+      </section>
+      <section id="material-detail" aria-labelledby="material-title" hidden></section>
+    </section>
+
+    <section id="compare" data-panel hidden>
+      <div class="view-heading">
+        <div><h1>Compare materials</h1><p>Rank valid uploads by the model’s estimated fast-class probability.</p></div>
+        <a href="#screen" class="button button-outline">Upload CIFs</a>
+      </div>
+      <div id="comparison-content"></div>
+    </section>
+
+    <section id="model" data-panel hidden>
+      <div class="view-heading">
+        <div><h1>Model results</h1><p>Evaluate the screening model on the official OBELiX CSV split and the archived CIF subset.</p></div>
+      </div>
+      <div id="model-content" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>IonLab · Local screening workspace</span>
+    <a href="https://github.com/NRC-Mila/OBELiX" target="_blank" rel="noreferrer">NRC-Mila OBELiX</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1951 @@
+{
+  "obelix_revision": "4eaac889809dd489e3bae468c45d5c0e02b9147a",
+  "conductivity_threshold_s_per_cm": 0.0001,
+  "protected_sha256": {
+    "artifacts/fast_conductor.joblib": "aa83b2cc696cd7b2a481c4801398ae5dc1660e6a823bcf3fdcd343cd74bbda23",
+    "reports/benchmark.json": "9c41826bc6e30bf08b2e2dd5fe249a586f14546535c8a9f4faae725a512fd507",
+    "reports/upload-verification.json": "ce2fd030c0fe070d6854571b157ad0262dd04228542e9b83890387845bc28232"
+  },
+  "train_counts": {
+    "rows": 247,
+    "slow": 159,
+    "fast": 88
+  },
+  "train_close_match_counts": {
+    "rows": 52,
+    "slow": 31,
+    "fast": 21
+  },
+  "train_rejected_cifs": {
+    "b4c": "The CIF structure must contain lithium.",
+    "cy2": "The CIF structure must contain lithium.",
+    "5tl": "The CIF structure must contain lithium.",
+    "u2y": "The CIF structure must contain lithium.",
+    "hta": "The CIF structure must contain lithium.",
+    "s3h": "The CIF structure must contain lithium.",
+    "u8r": "The CIF structure must contain lithium."
+  },
+  "test_counts": {
+    "rows": 67,
+    "slow": 47,
+    "fast": 20
+  },
+  "cross_validation": {
+    "folds": 5,
+    "seed": 42,
+    "distinct_groups": 209,
+    "grouping": "Union of equal normalized CIF or CSV elemental fractions rounded to eight decimals.",
+    "validation_fold_counts": [
+      {
+        "rows": 49,
+        "slow": 31,
+        "fast": 18
+      },
+      {
+        "rows": 49,
+        "slow": 32,
+        "fast": 17
+      },
+      {
+        "rows": 49,
+        "slow": 32,
+        "fast": 17
+      },
+      {
+        "rows": 49,
+        "slow": 31,
+        "fast": 18
+      },
+      {
+        "rows": 51,
+        "slow": 33,
+        "fast": 18
+      }
+    ],
+    "selection_rule": "Highest mean fast-class F2, then F1, then recall. Exact ties favor the first listed trial.",
+    "selected_classifier": "LogisticRegression",
+    "selected_parameters": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 2000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "best_by_family": {
+      "LogisticRegression": {
+        "settings": {
+          "logisticregression__C": 1.0,
+          "logisticregression__class_weight": "balanced"
+        },
+        "mean_fast_f2": 0.8774162416406067,
+        "mean_fast_f1": 0.8238446457057782,
+        "mean_fast_recall": 0.9196078431372549,
+        "mean_fast_precision": 0.7533653250773995,
+        "mean_accuracy": 0.8582633053221288,
+        "fold_fast_f2": [
+          0.9375,
+          0.8152173913043478,
+          0.8823529411764706,
+          0.9278350515463918,
+          0.8241758241758241
+        ]
+      },
+      "RandomForestClassifier": {
+        "settings": {
+          "randomforestclassifier__class_weight": "balanced",
+          "randomforestclassifier__min_samples_leaf": 2
+        },
+        "mean_fast_f2": 0.8434994778140279,
+        "mean_fast_f1": 0.8507437055824152,
+        "mean_fast_recall": 0.8398692810457516,
+        "mean_fast_precision": 0.8682706766917294,
+        "mean_accuracy": 0.8993997599039616,
+        "fold_fast_f2": [
+          1.0,
+          0.8620689655172413,
+          0.7317073170731707,
+          0.9340659340659341,
+          0.6896551724137931
+        ]
+      },
+      "HistGradientBoostingClassifier": {
+        "settings": {
+          "histgradientboostingclassifier__class_weight": "balanced",
+          "histgradientboostingclassifier__max_leaf_nodes": 7
+        },
+        "mean_fast_f2": 0.8224074775798913,
+        "mean_fast_f1": 0.8102921102921103,
+        "mean_fast_recall": 0.8313725490196078,
+        "mean_fast_precision": 0.7936842105263158,
+        "mean_accuracy": 0.8677070828331332,
+        "fold_fast_f2": [
+          0.9340659340659341,
+          0.8620689655172413,
+          0.9195402298850575,
+          0.8791208791208791,
+          0.5172413793103449
+        ]
+      }
+    },
+    "all_trials": {
+      "LogisticRegression": [
+        {
+          "settings": {
+            "logisticregression__C": 0.1,
+            "logisticregression__class_weight": null
+          },
+          "mean_fast_f2": 0.7406362510561557,
+          "mean_fast_f1": 0.7292828710511637,
+          "mean_fast_recall": 0.7516339869281047,
+          "mean_fast_precision": 0.7221303258145364,
+          "mean_accuracy": 0.8022408963585435,
+          "fold_fast_f2": [
+            0.7692307692307693,
+            0.7608695652173914,
+            0.8433734939759037,
+            0.8064516129032258,
+            0.5232558139534884
+          ]
+        },
+        {
+          "settings": {
+            "logisticregression__C": 0.1,
+            "logisticregression__class_weight": "balanced"
+          },
+          "mean_fast_f2": 0.850461362060905,
+          "mean_fast_f1": 0.7902255639097745,
+          "mean_fast_recall": 0.8973856209150327,
+          "mean_fast_precision": 0.7095614035087718,
+          "mean_accuracy": 0.830172068827531,
+          "fold_fast_f2": [
+            0.9375,
+            0.8064516129032258,
+            0.8620689655172413,
+            0.8854166666666666,
+            0.7608695652173914
+          ]
+        },
+        {
+          "settings": {
+            "logisticregression__C": 1.0,
+            "logisticregression__class_weight": null
+          },
+          "mean_fast_f2": 0.8476216452525549,
+          "mean_fast_f1": 0.8147168135546903,
+          "mean_fast_recall": 0.8751633986928106,
+          "mean_fast_precision": 0.7782021899668959,
+          "mean_accuracy": 0.858423369347739,
+          "fold_fast_f2": [
+            0.9574468085106383,
+            0.8152173913043478,
+            0.8823529411764706,
+            0.8854166666666666,
+            0.6976744186046512
+          ]
+        },
+        {
+          "settings": {
+            "logisticregression__C": 1.0,
+            "logisticregression__class_weight": "balanced"
+          },
+          "mean_fast_f2": 0.8774162416406067,
+          "mean_fast_f1": 0.8238446457057782,
+          "mean_fast_recall": 0.9196078431372549,
+          "mean_fast_precision": 0.7533653250773995,
+          "mean_accuracy": 0.8582633053221288,
+          "fold_fast_f2": [
+            0.9375,
+            0.8152173913043478,
+            0.8823529411764706,
+            0.9278350515463918,
+            0.8241758241758241
+          ]
+        },
+        {
+          "settings": {
+            "logisticregression__C": 10.0,
+            "logisticregression__class_weight": null
+          },
+          "mean_fast_f2": 0.8368314734800804,
+          "mean_fast_f1": 0.8073315826580971,
+          "mean_fast_recall": 0.8627450980392156,
+          "mean_fast_precision": 0.780267558528428,
+          "mean_accuracy": 0.8582633053221288,
+          "fold_fast_f2": [
+            0.9473684210526315,
+            0.8791208791208791,
+            0.7142857142857143,
+            0.9375,
+            0.7058823529411765
+          ]
+        },
+        {
+          "settings": {
+            "logisticregression__C": 10.0,
+            "logisticregression__class_weight": "balanced"
+          },
+          "mean_fast_f2": 0.8727039508037505,
+          "mean_fast_f1": 0.8272940408051015,
+          "mean_fast_recall": 0.9091503267973856,
+          "mean_fast_precision": 0.770880244088482,
+          "mean_accuracy": 0.8664265706282513,
+          "fold_fast_f2": [
+            0.9473684210526315,
+            0.8791208791208791,
+            0.8620689655172413,
+            0.9278350515463918,
+            0.7471264367816092
+          ]
+        }
+      ],
+      "RandomForestClassifier": [
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": null,
+            "randomforestclassifier__min_samples_leaf": 1
+          },
+          "mean_fast_f2": 0.7882170959937744,
+          "mean_fast_f1": 0.8180196887701958,
+          "mean_fast_recall": 0.7718954248366013,
+          "mean_fast_precision": 0.8893845576508115,
+          "mean_accuracy": 0.8874749899959985,
+          "fold_fast_f2": [
+            0.989010989010989,
+            0.8235294117647058,
+            0.6875,
+            0.898876404494382,
+            0.5421686746987951
+          ]
+        },
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": null,
+            "randomforestclassifier__min_samples_leaf": 2
+          },
+          "mean_fast_f2": 0.7814261341466329,
+          "mean_fast_f1": 0.8177108084613156,
+          "mean_fast_recall": 0.7607843137254902,
+          "mean_fast_precision": 0.8999108734402853,
+          "mean_accuracy": 0.8874749899959985,
+          "fold_fast_f2": [
+            0.9550561797752809,
+            0.8235294117647058,
+            0.6875,
+            0.898876404494382,
+            0.5421686746987951
+          ]
+        },
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": null,
+            "randomforestclassifier__min_samples_leaf": 4
+          },
+          "mean_fast_f2": 0.7324383531431775,
+          "mean_fast_f1": 0.7823000345855806,
+          "mean_fast_recall": 0.7045751633986927,
+          "mean_fast_precision": 0.8983957219251337,
+          "mean_accuracy": 0.8670668267306925,
+          "fold_fast_f2": [
+            0.7647058823529411,
+            0.8235294117647058,
+            0.6329113924050633,
+            0.898876404494382,
+            0.5421686746987951
+          ]
+        },
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": "balanced",
+            "randomforestclassifier__min_samples_leaf": 1
+          },
+          "mean_fast_f2": 0.8224075438165726,
+          "mean_fast_f1": 0.8304089594412174,
+          "mean_fast_recall": 0.8183006535947712,
+          "mean_fast_precision": 0.8502642825011246,
+          "mean_accuracy": 0.8874749899959984,
+          "fold_fast_f2": [
+            0.989010989010989,
+            0.872093023255814,
+            0.7738095238095238,
+            0.8888888888888888,
+            0.5882352941176471
+          ]
+        },
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": "balanced",
+            "randomforestclassifier__min_samples_leaf": 2
+          },
+          "mean_fast_f2": 0.8434994778140279,
+          "mean_fast_f1": 0.8507437055824152,
+          "mean_fast_recall": 0.8398692810457516,
+          "mean_fast_precision": 0.8682706766917294,
+          "mean_accuracy": 0.8993997599039616,
+          "fold_fast_f2": [
+            1.0,
+            0.8620689655172413,
+            0.7317073170731707,
+            0.9340659340659341,
+            0.6896551724137931
+          ]
+        },
+        {
+          "settings": {
+            "randomforestclassifier__class_weight": "balanced",
+            "randomforestclassifier__min_samples_leaf": 4
+          },
+          "mean_fast_f2": 0.8395246671966321,
+          "mean_fast_f1": 0.8397196274615629,
+          "mean_fast_recall": 0.8405228758169935,
+          "mean_fast_precision": 0.8447270136124626,
+          "mean_accuracy": 0.8874749899959985,
+          "fold_fast_f2": [
+            0.9444444444444444,
+            0.8522727272727273,
+            0.7926829268292683,
+            0.9340659340659341,
+            0.6741573033707865
+          ]
+        }
+      ],
+      "HistGradientBoostingClassifier": [
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": null,
+            "histgradientboostingclassifier__max_leaf_nodes": 7
+          },
+          "mean_fast_f2": 0.8169473402833466,
+          "mean_fast_f1": 0.8138528138528137,
+          "mean_fast_recall": 0.8196078431372549,
+          "mean_fast_precision": 0.8112280701754386,
+          "mean_accuracy": 0.8717887154861945,
+          "fold_fast_f2": [
+            0.9444444444444444,
+            0.8620689655172413,
+            0.872093023255814,
+            0.8888888888888888,
+            0.5172413793103449
+          ]
+        },
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": null,
+            "histgradientboostingclassifier__max_leaf_nodes": 15
+          },
+          "mean_fast_f2": 0.8170211001948348,
+          "mean_fast_f1": 0.8142940175198239,
+          "mean_fast_recall": 0.8202614379084967,
+          "mean_fast_precision": 0.8164102564102563,
+          "mean_accuracy": 0.8758703481392557,
+          "fold_fast_f2": [
+            0.9444444444444444,
+            0.9090909090909091,
+            0.872093023255814,
+            0.8888888888888888,
+            0.47058823529411764
+          ]
+        },
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": null,
+            "histgradientboostingclassifier__max_leaf_nodes": 31
+          },
+          "mean_fast_f2": 0.8170211001948348,
+          "mean_fast_f1": 0.8142940175198239,
+          "mean_fast_recall": 0.8202614379084967,
+          "mean_fast_precision": 0.8164102564102563,
+          "mean_accuracy": 0.8758703481392557,
+          "fold_fast_f2": [
+            0.9444444444444444,
+            0.9090909090909091,
+            0.872093023255814,
+            0.8888888888888888,
+            0.47058823529411764
+          ]
+        },
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": "balanced",
+            "histgradientboostingclassifier__max_leaf_nodes": 7
+          },
+          "mean_fast_f2": 0.8224074775798913,
+          "mean_fast_f1": 0.8102921102921103,
+          "mean_fast_recall": 0.8313725490196078,
+          "mean_fast_precision": 0.7936842105263158,
+          "mean_accuracy": 0.8677070828331332,
+          "fold_fast_f2": [
+            0.9340659340659341,
+            0.8620689655172413,
+            0.9195402298850575,
+            0.8791208791208791,
+            0.5172413793103449
+          ]
+        },
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": "balanced",
+            "histgradientboostingclassifier__max_leaf_nodes": 15
+          },
+          "mean_fast_f2": 0.8223224249687762,
+          "mean_fast_f1": 0.8102492102492104,
+          "mean_fast_recall": 0.8313725490196078,
+          "mean_fast_precision": 0.7940350877192983,
+          "mean_accuracy": 0.8677070828331332,
+          "fold_fast_f2": [
+            0.9340659340659341,
+            0.9090909090909091,
+            0.872093023255814,
+            0.8791208791208791,
+            0.5172413793103449
+          ]
+        },
+        {
+          "settings": {
+            "histgradientboostingclassifier__class_weight": "balanced",
+            "histgradientboostingclassifier__max_leaf_nodes": 31
+          },
+          "mean_fast_f2": 0.8223224249687762,
+          "mean_fast_f1": 0.8102492102492104,
+          "mean_fast_recall": 0.8313725490196078,
+          "mean_fast_precision": 0.7940350877192983,
+          "mean_accuracy": 0.8677070828331332,
+          "fold_fast_f2": [
+            0.9340659340659341,
+            0.9090909090909091,
+            0.872093023255814,
+            0.8791208791208791,
+            0.5172413793103449
+          ]
+        }
+      ]
+    }
+  },
+  "csv_control_policy": "Same rows, labels, selected classifier, and settings as the CIF-trained model.",
+  "class_prediction_policy": "Standard classifier predict rule for every model.",
+  "confusion_matrix_class_order": [
+    0,
+    1
+  ],
+  "test_metrics": {
+    "saved_full_csv": {
+      "all": {
+        "rows": 67,
+        "slow": 47,
+        "fast": 20,
+        "accuracy": 0.835820895522388,
+        "precision": 0.9090909090909091,
+        "recall": 0.5,
+        "f1": 0.6451612903225806,
+        "confusion_matrix": [
+          [
+            46,
+            1
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "fast_f2": 0.5494505494505495,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "elz",
+          "ard",
+          "ei3",
+          "24k",
+          "4p7",
+          "j5g",
+          "duf",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "gwu"
+        ]
+      },
+      "close_match": {
+        "rows": 9,
+        "slow": 4,
+        "fast": 5,
+        "accuracy": 0.5555555555555556,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "fast_f2": 0.23809523809523808,
+        "missed_fast_ids": [
+          "elz",
+          "ei3",
+          "4p7",
+          "duf"
+        ],
+        "false_positive_ids": []
+      },
+      "unflagged": {
+        "rows": 58,
+        "slow": 43,
+        "fast": 15,
+        "accuracy": 0.8793103448275862,
+        "precision": 0.9,
+        "recall": 0.6,
+        "f1": 0.72,
+        "confusion_matrix": [
+          [
+            42,
+            1
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "fast_f2": 0.6428571428571429,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "ard",
+          "24k",
+          "j5g",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "gwu"
+        ]
+      }
+    },
+    "cif_trained": {
+      "all": {
+        "rows": 67,
+        "slow": 47,
+        "fast": 20,
+        "accuracy": 0.6716417910447762,
+        "precision": 0.46153846153846156,
+        "recall": 0.6,
+        "f1": 0.5217391304347826,
+        "confusion_matrix": [
+          [
+            33,
+            14
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "fast_f2": 0.5660377358490566,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "elz",
+          "ard",
+          "ei3",
+          "4p7",
+          "j5g",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "cfy",
+          "2uv",
+          "gwu",
+          "ar1",
+          "cz2",
+          "klr",
+          "mn3",
+          "o0a",
+          "qer",
+          "aab",
+          "1ty",
+          "zv5",
+          "xk3",
+          "i4l"
+        ]
+      },
+      "close_match": {
+        "rows": 9,
+        "slow": 4,
+        "fast": 5,
+        "accuracy": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714,
+        "confusion_matrix": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "fast_f2": 0.45454545454545453,
+        "missed_fast_ids": [
+          "elz",
+          "ei3",
+          "4p7"
+        ],
+        "false_positive_ids": []
+      },
+      "unflagged": {
+        "rows": 58,
+        "slow": 43,
+        "fast": 15,
+        "accuracy": 0.6724137931034483,
+        "precision": 0.4166666666666667,
+        "recall": 0.6666666666666666,
+        "f1": 0.5128205128205128,
+        "confusion_matrix": [
+          [
+            29,
+            14
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "fast_f2": 0.5952380952380952,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "ard",
+          "j5g",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "cfy",
+          "2uv",
+          "gwu",
+          "ar1",
+          "cz2",
+          "klr",
+          "mn3",
+          "o0a",
+          "qer",
+          "aab",
+          "1ty",
+          "zv5",
+          "xk3",
+          "i4l"
+        ]
+      }
+    },
+    "matched_csv_control": {
+      "all": {
+        "rows": 67,
+        "slow": 47,
+        "fast": 20,
+        "accuracy": 0.6716417910447762,
+        "precision": 0.46153846153846156,
+        "recall": 0.6,
+        "f1": 0.5217391304347826,
+        "confusion_matrix": [
+          [
+            33,
+            14
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "fast_f2": 0.5660377358490566,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "elz",
+          "ard",
+          "ei3",
+          "4p7",
+          "j5g",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "2uv",
+          "br1",
+          "gwu",
+          "ar1",
+          "cz2",
+          "klr",
+          "mn3",
+          "o0a",
+          "qer",
+          "aab",
+          "1ty",
+          "zv5",
+          "xk3",
+          "i4l"
+        ]
+      },
+      "close_match": {
+        "rows": 9,
+        "slow": 4,
+        "fast": 5,
+        "accuracy": 0.5555555555555556,
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1": 0.5,
+        "confusion_matrix": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "fast_f2": 0.43478260869565216,
+        "missed_fast_ids": [
+          "elz",
+          "ei3",
+          "4p7"
+        ],
+        "false_positive_ids": [
+          "br1"
+        ]
+      },
+      "unflagged": {
+        "rows": 58,
+        "slow": 43,
+        "fast": 15,
+        "accuracy": 0.6896551724137931,
+        "precision": 0.43478260869565216,
+        "recall": 0.6666666666666666,
+        "f1": 0.5263157894736842,
+        "confusion_matrix": [
+          [
+            30,
+            13
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "fast_f2": 0.6024096385542169,
+        "missed_fast_ids": [
+          "mdp",
+          "de5",
+          "ard",
+          "j5g",
+          "3rh"
+        ],
+        "false_positive_ids": [
+          "2uv",
+          "gwu",
+          "ar1",
+          "cz2",
+          "klr",
+          "mn3",
+          "o0a",
+          "qer",
+          "aab",
+          "1ty",
+          "zv5",
+          "xk3",
+          "i4l"
+        ]
+      }
+    }
+  },
+  "test_predictions": [
+    {
+      "id": "ro9",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.08754674964881447
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.08184139068317786
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.0540965965112791
+      }
+    },
+    {
+      "id": "7cr",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.19369668659610167
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.22821484671832895
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.13724401998871857
+      }
+    },
+    {
+      "id": "mdp",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.15978895300089466
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.13809427356357912
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.27119445957354404
+      }
+    },
+    {
+      "id": "de5",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.000110658920517631
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 6.354584582065049e-05
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.16877479442763121
+      }
+    },
+    {
+      "id": "cfy",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.5559975918906019
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.4088250132233493
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2057210387924082
+      }
+    },
+    {
+      "id": "na5",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.015719284758741667
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.00788959006453689
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.27024504666804444
+      }
+    },
+    {
+      "id": "elz",
+      "fast_label": 1,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.013331887154326023
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.008359548165656521
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2660802675918723
+      }
+    },
+    {
+      "id": "p81",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.010183854240480869
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.03374501518630544
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.15066885712826553
+      }
+    },
+    {
+      "id": "ecp",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.07754082639268091
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.04161752271387323
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.14699450736817074
+      }
+    },
+    {
+      "id": "me3",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.13246120631767438
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0929126553756678
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1740108386446188
+      }
+    },
+    {
+      "id": "zs0",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.15422975684842927
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.10577996065550643
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.12700606015917684
+      }
+    },
+    {
+      "id": "ard",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.0020456334590986456
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0010523203722440058
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.11350412479695574
+      }
+    },
+    {
+      "id": "ku9",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.00018819399401680015
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0003365171683822019
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2024702866595623
+      }
+    },
+    {
+      "id": "9n0",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.00015415488466451646
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.000279726817389081
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.20858139777067342
+      }
+    },
+    {
+      "id": "ozo",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.0001262565827726323
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.00023301751608218593
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.20455109474037036
+      }
+    },
+    {
+      "id": "h5i",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.006540357087412619
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.011995391914813767
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.18306236616239768
+      }
+    },
+    {
+      "id": "o9h",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 9.742521606430044e-05
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.00018373918055796318
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.19963658329660536
+      }
+    },
+    {
+      "id": "4xq",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 2.3841927406169503e-05
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 6.33381798288692e-05
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.19697858137898824
+      }
+    },
+    {
+      "id": "0ii",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 8.821996699026234e-05
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0001672816743067783
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.20086409652411857
+      }
+    },
+    {
+      "id": "2uv",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999935439503556
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999914532807873
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.26182027861503115
+      }
+    },
+    {
+      "id": "2r7",
+      "fast_label": 0,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 1.2879086456614456e-06
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 9.26930721278728e-07
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.08313926460659653
+      }
+    },
+    {
+      "id": "b56",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 2.2001161766650468e-10
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 1.741847004141417e-10
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.08686538842294599
+      }
+    },
+    {
+      "id": "mfu",
+      "fast_label": 0,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 2.1057492460332067e-05
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 2.2794817171205695e-05
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.10215158860630486
+      }
+    },
+    {
+      "id": "i47",
+      "fast_label": 0,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.04246663029079201
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.05269804315706275
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.46897509753549815
+      }
+    },
+    {
+      "id": "vwy",
+      "fast_label": 1,
+      "close_match": true,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.6924059808652264
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.6007715345178439
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.7514154686733637
+      }
+    },
+    {
+      "id": "xq3",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.00035294024443660403
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0007991956720127623
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.21260402362010958
+      }
+    },
+    {
+      "id": "wgw",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 2.0114135273060664e-05
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 3.687410524633331e-05
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1897899699800351
+      }
+    },
+    {
+      "id": "ipo",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.13544404905927016
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.11798197836428266
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1779528960046134
+      }
+    },
+    {
+      "id": "bnu",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.38543084346557993
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.4830943207595044
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2458837201849732
+      }
+    },
+    {
+      "id": "kxw",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.2252851801855007
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.3848495908317186
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1403673577914313
+      }
+    },
+    {
+      "id": "um1",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.015737253531212855
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.011650080957961545
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.10390216002543294
+      }
+    },
+    {
+      "id": "l2w",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.26160852444348076
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.19328549567354522
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2213635182937837
+      }
+    },
+    {
+      "id": "ob9",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.03247722336021417
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.023533386931246347
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.29002683120885875
+      }
+    },
+    {
+      "id": "ei3",
+      "fast_label": 1,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.00023652017855978316
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.00017587790775337164
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.18966955354215667
+      }
+    },
+    {
+      "id": "ux3",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 8.767960384087808e-23
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 1.4699066584948706e-22
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.13233487660982615
+      }
+    },
+    {
+      "id": "br1",
+      "fast_label": 0,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.33543839539617176
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.6716224983687056
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.14090390928404553
+      }
+    },
+    {
+      "id": "jy6",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.45860380211172935
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.42030892853293483
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.14113466579766512
+      }
+    },
+    {
+      "id": "24k",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9432178035662325
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9418208626996003
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.3467404731879034
+      }
+    },
+    {
+      "id": "mtr",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9307050704435781
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.944079523977494
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.6982791368999499
+      }
+    },
+    {
+      "id": "s2v",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9356254016001426
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9487484115460832
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.6669930393964613
+      }
+    },
+    {
+      "id": "4p7",
+      "fast_label": 1,
+      "close_match": true,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.03839842314002537
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.028026224755864457
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.14556881949568815
+      }
+    },
+    {
+      "id": "lk8",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9151663459450943
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9087561439588475
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.701484054640309
+      }
+    },
+    {
+      "id": "lud",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9313424112947631
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9312116657621392
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.6984104773414133
+      }
+    },
+    {
+      "id": "vlm",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9341064990709005
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9517410081810591
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.6258502486498484
+      }
+    },
+    {
+      "id": "gwu",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9441124372379291
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9659665998666994
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.5881549972585444
+      }
+    },
+    {
+      "id": "4ie",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9838488677619607
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9882188460607753
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.7918723142406602
+      }
+    },
+    {
+      "id": "9o6",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.8333399064904606
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.8502658566009665
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.7317365544823676
+      }
+    },
+    {
+      "id": "lpt",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.003741406656421225
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.0029774865898757434
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1925290185612737
+      }
+    },
+    {
+      "id": "j5g",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.38876584843365275
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.42194639843215265
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.25956446831282953
+      }
+    },
+    {
+      "id": "dvb",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.3507562212364138
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.395826812346392
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.15123438191498617
+      }
+    },
+    {
+      "id": "cti",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.3603224860750811
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.4018846038779666
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1567429808673301
+      }
+    },
+    {
+      "id": "2d1",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.36501524802815677
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.4055650713932654
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.1765720406963899
+      }
+    },
+    {
+      "id": "wa3",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9029427036589908
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9198100164460774
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.8978238628916716
+      }
+    },
+    {
+      "id": "l6h",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9861386253575714
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9902892747138208
+      },
+      "saved_full_csv": {
+        "class": 1,
+        "fast_probability": 0.9290136442181451
+      }
+    },
+    {
+      "id": "duf",
+      "fast_label": 1,
+      "close_match": true,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.7363009386571622
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.7500615763555418
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.26322350455559473
+      }
+    },
+    {
+      "id": "3rh",
+      "fast_label": 1,
+      "close_match": false,
+      "cif_trained": {
+        "class": 0,
+        "fast_probability": 0.4125481598169215
+      },
+      "matched_csv_control": {
+        "class": 0,
+        "fast_probability": 0.43697341479783625
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.4381908803328431
+      }
+    },
+    {
+      "id": "ar1",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9121385005594527
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.925175394190474
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2782964629124341
+      }
+    },
+    {
+      "id": "cz2",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999724656592769
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999719448392952
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.27790198935008126
+      }
+    },
+    {
+      "id": "klr",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9977122937279597
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9979070671099791
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2981730346522538
+      }
+    },
+    {
+      "id": "mn3",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999935324803831
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999915550281419
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.26182027861503115
+      }
+    },
+    {
+      "id": "o0a",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999990450809667
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999985818973351
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2765137177679989
+      }
+    },
+    {
+      "id": "qer",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999991468149437
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999988576966684
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.30955659303551186
+      }
+    },
+    {
+      "id": "aab",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999992648828512
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999991268523071
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.3108752676820554
+      }
+    },
+    {
+      "id": "1ty",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9019108927072564
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.8835490074352789
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2625203945568
+      }
+    },
+    {
+      "id": "zv5",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.997931238187805
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9971979092525011
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2859027992876767
+      }
+    },
+    {
+      "id": "xk3",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999899690552472
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999806402356661
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.2128074007284661
+      }
+    },
+    {
+      "id": "i4l",
+      "fast_label": 0,
+      "close_match": false,
+      "cif_trained": {
+        "class": 1,
+        "fast_probability": 0.9999326051265782
+      },
+      "matched_csv_control": {
+        "class": 1,
+        "fast_probability": 0.9999008891754917
+      },
+      "saved_full_csv": {
+        "class": 0,
+        "fast_probability": 0.24754166619671614
+      }
+    }
+  ]
+}

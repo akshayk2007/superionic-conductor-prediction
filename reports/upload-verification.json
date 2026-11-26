@@ -1,0 +1,4951 @@
+{
+  "obelix_revision": "4eaac889809dd489e3bae468c45d5c0e02b9147a",
+  "saved_model": "RandomForestClassifier",
+  "saved_artifact_sha256": "aa83b2cc696cd7b2a481c4801398ae5dc1660e6a823bcf3fdcd343cd74bbda23",
+  "training_coverage_profile": {
+    "distinct_compositions": 390,
+    "composition_distance_threshold": 0.2,
+    "cell_volume_per_atom_range_angstrom3": [
+      8.619552894614674,
+      45.36601841204999
+    ],
+    "crystal_systems": [
+      "triclinic",
+      "monoclinic",
+      "orthorhombic",
+      "tetragonal",
+      "trigonal",
+      "hexagonal",
+      "cubic"
+    ]
+  },
+  "confusion_matrix_class_order": [
+    0,
+    1
+  ],
+  "cif_verification": {
+    "archived_test_cifs": 67,
+    "evaluated": {
+      "rows": 67,
+      "slow": 47,
+      "fast": 20
+    },
+    "rejected": [],
+    "cif_metrics": {
+      "accuracy": 0.835820895522388,
+      "precision": 0.9090909090909091,
+      "recall": 0.5,
+      "f1": 0.6451612903225806,
+      "confusion_matrix": [
+        [
+          46,
+          1
+        ],
+        [
+          10,
+          10
+        ]
+      ]
+    },
+    "csv_metrics_on_same_rows": {
+      "accuracy": 0.8507462686567164,
+      "precision": 0.9166666666666666,
+      "recall": 0.55,
+      "f1": 0.6875,
+      "confusion_matrix": [
+        [
+          46,
+          1
+        ],
+        [
+          9,
+          11
+        ]
+      ]
+    },
+    "prediction_disagreements": 1,
+    "test_cifs_with_partial_occupancies": 54,
+    "test_cifs_with_parser_warnings": 4,
+    "test_cifs_outside_coverage": 14,
+    "comparison_tolerances": {
+      "max_absolute_atomic_fraction_change": 0.0001,
+      "flag_any_element_added_or_removed": true,
+      "relative_cell_volume_per_atom_change": 0.01,
+      "weighted_summary_relative": 0.0001,
+      "weighted_summary_absolute": 1e-06,
+      "discrete_features": "exact",
+      "paired_feature_value_order": [
+        "csv",
+        "cif"
+      ]
+    },
+    "mismatch_counts": {
+      "composition_mismatch": 34,
+      "cell_volume_per_atom_mismatch": 4,
+      "crystal_system_mismatch": 0,
+      "space_group_number_mismatch": 1,
+      "element_count_mismatch": 0,
+      "changed_weighted_summaries": 35
+    },
+    "rows_with_any_model_feature_mismatch": 36,
+    "rows": [
+      {
+        "id": "ro9",
+        "archive_member": "test_randomized_cifs/ro9.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.0540965965112791,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.096059115,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li6.0B2.0P4.0O16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 6.0,
+          "B": 2.0,
+          "P": 4.0,
+          "O": 16.0
+        },
+        "space_group_number": [
+          2,
+          2
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          9.966605730760675,
+          9.966605730760675
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "triclinic",
+          "triclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "7cr",
+        "archive_member": "test_randomized_cifs/7cr.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.13724401998871857,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14285714499999996,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li4.0Na2.0B2.0P4.0O16.0",
+        "cif_unit_cell_element_counts": {
+          "Na": 2.0,
+          "Li": 4.0,
+          "B": 2.0,
+          "P": 4.0,
+          "O": 16.0
+        },
+        "space_group_number": [
+          2,
+          2
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          10.501491090392696,
+          10.501491090392692
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 3.552713678800501e-15,
+        "cell_volume_per_atom_relative_difference": 3.3830564138179446e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "triclinic",
+          "triclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "mdp",
+        "archive_member": "test_randomized_cifs/mdp.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.27119445957354404,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.023809525000000012,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li14.0P6.0S22.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 14.0,
+          "P": 6.0,
+          "S": 22.0
+        },
+        "space_group_number": [
+          2,
+          2
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          19.746371628734007,
+          19.746371635050224
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 6.316216882851222e-09,
+        "cell_volume_per_atom_relative_difference": 3.1986721417012914e-10,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "triclinic",
+          "triclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "de5",
+        "archive_member": "test_randomized_cifs/de5.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.16877479442763121,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.10014677000000005,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li6.0In2.0Cl12.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 6.0,
+          "In": 2.0300000000000002,
+          "Cl": 12.0
+        },
+        "space_group_number": [
+          12,
+          12
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0013479780329505725,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.3,
+            0.29955067398901647
+          ],
+          "Cl": [
+            0.6,
+            0.5991013479780329
+          ],
+          "In": [
+            0.1,
+            0.10134797803295058
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          21.475529506321795,
+          21.443364459632345
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.03216504668944964,
+        "cell_volume_per_atom_relative_difference": 0.0014977533699451345,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.0,
+            16.04942586120819
+          ],
+          "std_atomic_number": [
+            12.657013865837392,
+            12.711753239197526
+          ],
+          "mean_atomic_mass_amu": [
+            34.83590000000001,
+            34.95569345981029
+          ],
+          "std_atomic_mass_amu": [
+            29.55299905745608,
+            29.692400169574487
+          ]
+        }
+      },
+      {
+        "id": "cfy",
+        "archive_member": "test_randomized_cifs/cfy.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2057210387924082,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.13333332999999997,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li4.0P4.0S12.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 4.0,
+          "P": 4.0,
+          "S": 12.0
+        },
+        "space_group_number": [
+          12,
+          12
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          20.669440614872734,
+          20.669440614872734
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "na5",
+        "archive_member": "test_randomized_cifs/na5.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.27024504666804444,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.46119434000000004,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li6.0Mo16.0S16.0O80.0H94.0W2.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 6.0,
+          "Mo": 16.0,
+          "H": 94.00000000000011,
+          "W": 2.0,
+          "S": 16.0,
+          "O": 79.95999999999992
+        },
+        "space_group_number": [
+          12,
+          12
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00011706267046202035,
+        "changed_atomic_fractions": {
+          "O": [
+            0.37383177570093457,
+            0.37371471303047255
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.322313576910307,
+          11.324430292852895
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.002116715942587888,
+        "cell_volume_per_atom_relative_difference": 0.00018695083193107505,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          6,
+          6
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "elz",
+        "archive_member": "test_randomized_cifs/elz.cif",
+        "official_close_match_flag": true,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2660802675918723,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14285714,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li6.0Y2.0Br12.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 6.000000000000001,
+          "Y": 1.99998,
+          "Br": 12.0
+        },
+        "space_group_number": [
+          12,
+          12
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 9.000009000004194e-07,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          26.926516746742585,
+          26.753616755613166
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.17289999112941956,
+        "cell_volume_per_atom_relative_difference": 0.006421179269328848,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "p81",
+        "archive_member": "test_randomized_cifs/p81.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.15066885712826553,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.20175438500000004,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li4.0Al4.0Cl16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 4.0,
+          "Al": 4.0,
+          "Cl": 16.0
+        },
+        "space_group_number": [
+          14,
+          14
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          24.622810048819442,
+          24.622810048819435
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 7.105427357601002e-15,
+        "cell_volume_per_atom_relative_difference": 2.8857093660362603e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "ecp",
+        "archive_member": "test_randomized_cifs/ecp.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.14699450736817074,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.117841405,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La4.0Li4.0O8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 4.0,
+          "La": 4.0,
+          "O": 8.0
+        },
+        "space_group_number": [
+          14,
+          14
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.025171571685542,
+          13.025171571685542
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "me3",
+        "archive_member": "test_randomized_cifs/me3.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1740108386446188,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.11784140500000001,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La3.6Sr0.4Li4.0O8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 4.0,
+          "La": 3.5992,
+          "Sr": 0.4008,
+          "O": 8.0
+        },
+        "space_group_number": [
+          14,
+          14
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 4.999999999999796e-05,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.039423758652825,
+          13.039423758652825
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "zs0",
+        "archive_member": "test_randomized_cifs/zs0.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.12700606015917684,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14424145000000005,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La4.0Li3.04Mg0.32O8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 3.048,
+          "Mg": 0.312,
+          "La": 4.0,
+          "O": 8.0
+        },
+        "space_group_number": [
+          14,
+          14
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.000520833333333335,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.19791666666666669,
+            0.19843750000000002
+          ],
+          "Mg": [
+            0.020833333333333336,
+            0.0203125
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          13.570423795191504,
+          13.570423795191504
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            19.854166666666668,
+            19.84947916666667
+          ],
+          "std_atomic_number": [
+            22.136404389727694,
+            22.13901979865864
+          ],
+          "mean_atomic_mass_amu": [
+            46.38641406250001,
+            46.377370312500005
+          ]
+        }
+      },
+      {
+        "id": "ard",
+        "archive_member": "test_randomized_cifs/ard.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.11350412479695574,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.137681155,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li8.0Ta16.0P8.0O64.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 7.999999999999998,
+          "Ta": 16.0,
+          "P": 8.0,
+          "O": 64.0
+        },
+        "space_group_number": [
+          15,
+          15
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 1.3877787807814457e-17,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.488340894037117,
+          12.48834089403712
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 3.552713678800501e-15,
+        "cell_volume_per_atom_relative_difference": 2.8448243917627494e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "monoclinic",
+          "monoclinic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "ku9",
+        "archive_member": "test_randomized_cifs/ku9.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2024702866595623,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.08181818,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.4Na0.1La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.4,
+          "Na": 0.1,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.297094272,
+          13.297094272
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "9n0",
+        "archive_member": "test_randomized_cifs/9n0.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.20858139777067342,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.09292929000000001,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.3Na0.2La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.3,
+          "Na": 0.2,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.314149576,
+          13.314149576
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "ozo",
+        "archive_member": "test_randomized_cifs/ozo.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.20455109474037036,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.1040404,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.2Na0.3La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.2,
+          "Na": 0.3,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.37722092,
+          13.37722092
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "h5i",
+        "archive_member": "test_randomized_cifs/h5i.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.18306236616239768,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.11515151,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.1Na0.4La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.1,
+          "Na": 0.4,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          123,
+          123
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.387479525,
+          13.387479525
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "o9h",
+        "archive_member": "test_randomized_cifs/o9h.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.19963658329660536,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.118484845,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.07Na0.43La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.07,
+          "Na": 0.43,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.451154067222221,
+          13.451154067222221
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "4xq",
+        "archive_member": "test_randomized_cifs/4xq.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.19697858137898824,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.169610395,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.04Na0.46La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.04,
+          "Na": 0.46,
+          "Nb": 2.0,
+          "O": 4.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.09523809523809523,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.0044444444444444444,
+            0.005714285714285714
+          ],
+          "O": [
+            0.6666666666666666,
+            0.5714285714285714
+          ],
+          "Na": [
+            0.051111111111111114,
+            0.06571428571428571
+          ],
+          "Nb": [
+            0.2222222222222222,
+            0.2857142857142857
+          ],
+          "La": [
+            0.05555555555555555,
+            0.07142857142857142
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          13.423407560000001,
+          17.258666862857144
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 3.8352593028571427,
+        "cell_volume_per_atom_relative_difference": 0.2857142857142857,
+        "cell_volume_per_atom_mismatch": true,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            18.186666666666667,
+            21.097142857142856
+          ],
+          "std_atomic_number": [
+            16.498236942843988,
+            17.65904844086268
+          ],
+          "mean_atomic_mass_amu": [
+            40.23498098542222,
+            47.159432695542854
+          ],
+          "std_atomic_mass_amu": [
+            39.6117377396672,
+            42.4456710042431
+          ]
+        }
+      },
+      {
+        "id": "0ii",
+        "archive_member": "test_randomized_cifs/0ii.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.20086409652411857,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.1240404,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.02Na0.48La0.5Nb2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.5,
+          "Li": 0.02,
+          "Na": 0.48,
+          "Nb": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          47,
+          47
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          13.420319444142224,
+          13.420319444142224
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "2uv",
+        "archive_member": "test_randomized_cifs/2uv.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.26182027861503115,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.44444444,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Sn4.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Sn": 4.0,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          22.501919549917503,
+          22.501919549917503
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "2r7",
+        "archive_member": "test_randomized_cifs/2r7.cif",
+        "official_close_match_flag": true,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.08313926460659653,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.127192985,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li12.0Cr4.0Mo12.0O48.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 12.004000000000005,
+          "Cr": 3.996,
+          "Mo": 12.0,
+          "O": 48.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 5.263157894744297e-05,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.15379961954925,
+          12.190648837605263
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.03684921805601249,
+        "cell_volume_per_atom_relative_difference": 0.003031909296640117,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "b56",
+        "archive_member": "test_randomized_cifs/b56.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.08686538842294599,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.127192985,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li8.0Mg8.0Mo12.0O48.0",
+        "cif_unit_cell_element_counts": {
+          "Mg": 7.995999999999999,
+          "Li": 8.004000000000001,
+          "Mo": 12.0,
+          "O": 48.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 5.263157894738746e-05,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.415777097646002,
+          12.415777097646002
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "mfu",
+        "archive_member": "test_randomized_cifs/mfu.cif",
+        "official_close_match_flag": true,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.10215158860630486,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.127192985,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li12.0Fe4.0Mo12.0O48.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 12.0004,
+          "Fe": 3.9995999999999996,
+          "Mo": 12.0,
+          "O": 48.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 5.263157894758175e-06,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.271129843394958,
+          12.33258821052632
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.06145836713136177,
+        "cell_volume_per_atom_relative_difference": 0.005008370697376515,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "i47",
+        "archive_member": "test_randomized_cifs/i47.cif",
+        "official_close_match_flag": true,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.46897509753549815,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.21428571500000002,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li2.0Zn2.0P2.0S8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 2.0,
+          "Zn": 2.0,
+          "P": 2.0,
+          "S": 8.0
+        },
+        "space_group_number": [
+          82,
+          82
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          20.963591186857148,
+          20.963591186857148
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "vwy",
+        "archive_member": "test_randomized_cifs/vwy.cif",
+        "official_close_match_flag": true,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.7514154686733637,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.004966919999999965,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La1.12Li0.66Ti2.0O6.0",
+        "cif_unit_cell_element_counts": {
+          "La": 1.104,
+          "Li": 0.66,
+          "Ti": 2.0,
+          "O": 6.0
+        },
+        "space_group_number": [
+          123,
+          123
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0014510128186761562,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.06748466257668712,
+            0.06759524784924212
+          ],
+          "O": [
+            0.6134969325153373,
+            0.6145022531749283
+          ],
+          "Ti": [
+            0.20449897750511245,
+            0.20483408439164277
+          ],
+          "La": [
+            0.11451942740286299,
+            0.11306841458418683
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.865104436349693,
+          11.90654529999785
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.041440863648157134,
+        "cell_volume_per_atom_relative_difference": 0.003492667415652891,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.13701431492842,
+            16.070053256861943
+          ],
+          "std_atomic_number": [
+            15.827793888863448,
+            15.754011095115986
+          ],
+          "mean_atomic_mass_amu": [
+            35.98012130879346,
+            35.811460352314626
+          ],
+          "std_atomic_mass_amu": [
+            39.29255847211543,
+            39.103032774896135
+          ]
+        }
+      },
+      {
+        "id": "xq3",
+        "archive_member": "test_randomized_cifs/xq3.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.21260402362010958,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.087312965,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li4.0Sr3.0Nb5.77Fe0.23O19.77",
+        "cif_unit_cell_element_counts": {
+          "Sr": 3.0144,
+          "Li": 4.0,
+          "Nb": 5.756,
+          "Fe": 0.24,
+          "O": 20.0
+        },
+        "space_group_number": [
+          139,
+          139
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0025739680334954107,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.12206286237412269,
+            0.12117393306351935
+          ],
+          "O": [
+            0.6032956972841014,
+            0.6058696653175968
+          ],
+          "Fe": [
+            0.0070186145865120545,
+            0.0072704359838111614
+          ],
+          "Sr": [
+            0.09154714678059202,
+            0.09131667595666819
+          ],
+          "Nb": [
+            0.17607567897467197,
+            0.17436928967840437
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          12.391847790929205,
+          12.301603497950644
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.09024429297856074,
+        "cell_volume_per_atom_relative_difference": 0.00728255337711776,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.07293256026854,
+            16.018685020478394
+          ],
+          "std_atomic_number": [
+            14.638722931618373,
+            14.599959758454197
+          ],
+          "mean_atomic_mass_amu": [
+            35.271476978944165,
+            35.14182352470736
+          ],
+          "std_atomic_mass_amu": [
+            34.0700761472395,
+            33.98238624846304
+          ]
+        }
+      },
+      {
+        "id": "wgw",
+        "archive_member": "test_randomized_cifs/wgw.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1897899699800351,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.08012814500000001,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li4.0Sr3.0Nb6.0O20.0",
+        "cif_unit_cell_element_counts": {
+          "Sr": 3.048,
+          "Li": 4.0,
+          "Nb": 6.0,
+          "O": 20.0
+        },
+        "space_group_number": [
+          139,
+          139
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0013203934772562098,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.12121212121212122,
+            0.12103606874848705
+          ],
+          "O": [
+            0.6060606060606061,
+            0.6051803437424352
+          ],
+          "Sr": [
+            0.09090909090909091,
+            0.09222948438634712
+          ],
+          "Nb": [
+            0.18181818181818182,
+            0.18155410312273057
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          12.330972986939393,
+          12.313063077009197
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.017909909930196477,
+        "cell_volume_per_atom_relative_difference": 0.0014524328249819485,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.12121212121212,
+            16.152989590898088
+          ],
+          "std_atomic_number": [
+            14.72733507905494,
+            14.740204092813151
+          ],
+          "mean_atomic_mass_amu": [
+            35.395463030303034,
+            35.4713156620673
+          ],
+          "std_atomic_mass_amu": [
+            34.284907579898196,
+            34.31768106164758
+          ]
+        }
+      },
+      {
+        "id": "ipo",
+        "archive_member": "test_randomized_cifs/ipo.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1779528960046134,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.08333333,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li56.0La24.0Hf16.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 56.0,
+          "La": 24.0,
+          "Hf": 16.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          142,
+          142
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          11.299063493124999,
+          11.298642170324001
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.00042132280099771435,
+        "cell_volume_per_atom_relative_difference": 3.728829395941278e-05,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "tetragonal",
+          "tetragonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "bnu",
+        "archive_member": "test_randomized_cifs/bnu.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2458837201849732,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14285714,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li18.0Ga9.0Al9.0Ge18.0O72.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 18.0,
+          "Al": 9.0,
+          "Ga": 9.0,
+          "Ge": 18.0,
+          "O": 72.0
+        },
+        "space_group_number": [
+          146,
+          146
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.23343626338209,
+          12.23475793972861
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0013216763465191406,
+        "cell_volume_per_atom_relative_difference": 0.00010803802938633582,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "kxw",
+        "archive_member": "test_randomized_cifs/kxw.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1403673577914313,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14285714,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li18.0Al18.0Ge18.0O72.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 18.0,
+          "Al": 18.0,
+          "Ge": 18.0,
+          "O": 72.0
+        },
+        "space_group_number": [
+          146,
+          146
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          11.98687145937141,
+          11.98687145937141
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "um1",
+        "archive_member": "test_randomized_cifs/um1.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.10390216002543294,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.14285714,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li18.0Ga18.0Ge18.0O72.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 18.0,
+          "Ga": 18.0,
+          "Ge": 18.0,
+          "O": 72.0
+        },
+        "space_group_number": [
+          167,
+          148
+        ],
+        "space_group_number_mismatch": true,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.425797625908851,
+          12.425797625908846
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 5.329070518200751e-15,
+        "cell_volume_per_atom_relative_difference": 4.288715041591522e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "l2w",
+        "archive_member": "test_randomized_cifs/l2w.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2213635182937837,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [
+            "6 fractional coordinates rounded to ideal values to avoid issues with finite precision."
+          ],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.04762884000000002,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li3.33Mg0.33P2.0S6.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 3.3332,
+          "Mg": 0.3334,
+          "P": 2.0,
+          "S": 6.0
+        },
+        "space_group_number": [
+          162,
+          162
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0002911067847611859,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.2855917667238422,
+            0.2857044897399414
+          ],
+          "Mg": [
+            0.02830188679245283,
+            0.028577306156035175
+          ],
+          "S": [
+            0.5145797598627787,
+            0.5142886530780175
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          18.077450863105437,
+          18.067224132464418
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.010226730641019088,
+        "cell_volume_per_atom_relative_difference": 0.0005657175183859019,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            12.002572898799315,
+            12.000102857730614
+          ],
+          "mean_atomic_mass_amu": [
+            24.482993481989705,
+            24.478130063600357
+          ]
+        }
+      },
+      {
+        "id": "ob9",
+        "archive_member": "test_randomized_cifs/ob9.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.29002683120885875,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [
+            "6 fractional coordinates rounded to ideal values to avoid issues with finite precision."
+          ],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.09802883000000001,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li2.67Mg0.67P2.0S6.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 2.6668,
+          "Mg": 0.6666,
+          "P": 2.0,
+          "S": 6.0
+        },
+        "space_group_number": [
+          162,
+          162
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0003081214368207963,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.23544973544973544,
+            0.23530449820883406
+          ],
+          "Mg": [
+            0.05908289241622575,
+            0.05881730107469956
+          ],
+          "P": [
+            0.1763668430335097,
+            0.1764695501791166
+          ],
+          "S": [
+            0.5291005291005291,
+            0.5294086505373499
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          18.612683715049165,
+          18.623522802394476
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.010839087345310361,
+        "cell_volume_per_atom_relative_difference": 0.0005823495155911604,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            12.526455026455025,
+            12.529302768807245
+          ],
+          "std_atomic_number": [
+            5.370957431357919,
+            5.370127307062487
+          ],
+          "mean_atomic_mass_amu": [
+            25.498619400352734,
+            25.504217251663228
+          ],
+          "std_atomic_mass_amu": [
+            10.453228534589252,
+            10.451599100415999
+          ]
+        }
+      },
+      {
+        "id": "ei3",
+        "archive_member": "test_randomized_cifs/ei3.cif",
+        "official_close_match_flag": true,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.18966955354215667,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [
+            "4 fractional coordinates rounded to ideal values to avoid issues with finite precision."
+          ],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.08421052999999999,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li9.0Y3.0Cl18.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 9.0,
+          "Y": 3.0,
+          "Cl": 18.0
+        },
+        "space_group_number": [
+          164,
+          164
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          22.011671650177018,
+          21.933349568711098
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.07832208146592023,
+        "cell_volume_per_atom_relative_difference": 0.0035582068781809385,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "trigonal",
+          "trigonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "ux3",
+        "archive_member": "test_randomized_cifs/ux3.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.13233487660982615,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [
+            "4 fractional coordinates rounded to ideal values to avoid issues with finite precision."
+          ],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.24139863,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li0.57Sm9.02Si6.0O25.82",
+        "cif_unit_cell_element_counts": {
+          "Li": 0.568,
+          "Sm": 9.024000000000001,
+          "Si": 6.0,
+          "O": 25.82
+        },
+        "space_group_number": [
+          176,
+          176
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 8.607061807314187e-05,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.935302830891924,
+          12.934678118111524
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0006247127804002162,
+        "cell_volume_per_atom_relative_difference": 4.829518014130176e-05,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "hexagonal",
+          "hexagonal"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            20.562907510263223,
+            20.567758137737854
+          ],
+          "std_atomic_number": [
+            21.97502953052216,
+            21.977932782214527
+          ],
+          "mean_atomic_mass_amu": [
+            46.89256406665057,
+            46.904487491548345
+          ],
+          "std_atomic_mass_amu": [
+            54.77402304031717,
+            54.78143414329123
+          ]
+        }
+      },
+      {
+        "id": "br1",
+        "archive_member": "test_randomized_cifs/br1.cif",
+        "official_close_match_flag": true,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.14090390928404553,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.16666667,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li48.0Al16.0N32.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 48.0,
+          "Al": 16.0,
+          "N": 32.0
+        },
+        "space_group_number": [
+          206,
+          206
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          8.846647114583336,
+          8.874702000000001
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.028054885416665343,
+        "cell_volume_per_atom_relative_difference": 0.0031712449986185175,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "jy6",
+        "archive_member": "test_randomized_cifs/jy6.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.14113466579766512,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.13919415000000002,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li24.0P4.0O20.0Cl4.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 24.0,
+          "P": 4.0,
+          "Cl": 4.0,
+          "O": 20.0
+        },
+        "space_group_number": [
+          216,
+          216
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          10.694264053632766,
+          10.694264053632766
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "24k",
+        "archive_member": "test_randomized_cifs/24k.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.3467404731879034,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.12505731500000003,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li28.0Ge12.0P4.0S48.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 13.84319999999999,
+          "Ge": 6.1607999999999965,
+          "P": 1.996,
+          "S": 24.0
+        },
+        "space_group_number": [
+          216,
+          216
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.003495652173913011,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.30434782608695654,
+            0.3009391304347825
+          ],
+          "Ge": [
+            0.13043478260869565,
+            0.13393043478260866
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          10.236361943339544,
+          20.472723886679095
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 10.236361943339551,
+        "cell_volume_per_atom_relative_difference": 1.0000000000000007,
+        "cell_volume_per_atom_mismatch": true,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            14.086956521739129,
+            14.18728695652174
+          ],
+          "std_atomic_number": [
+            9.011649675152428,
+            9.049992656028936
+          ],
+          "mean_atomic_mass_amu": [
+            29.663511391304347,
+            29.89108243808696
+          ],
+          "std_atomic_mass_amu": [
+            20.028290766905805,
+            20.143905668664928
+          ]
+        }
+      },
+      {
+        "id": "mtr",
+        "archive_member": "test_randomized_cifs/mtr.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.6982791368999499,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.022841999999999994,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Fe1.28La23.6Li45.44Zr16.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 45.37679999999996,
+          "Fe": 1.2839999999999998,
+          "La": 23.56799999999999,
+          "Zr": 16.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          220,
+          220
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0002635207051204791,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.24923211935059236,
+            0.24901003573529526
+          ],
+          "O": [
+            0.5265467310223783,
+            0.5268102517274987
+          ],
+          "La": [
+            0.12944273804300133,
+            0.1293319167991009
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.989998104934662,
+          11.995998736158544
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.00600063122388228,
+        "cell_volume_per_atom_relative_difference": 0.0005004697391413791,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.031154014918826,
+            16.028697988462856
+          ],
+          "std_atomic_number": [
+            18.565075801609325,
+            18.560255213549652
+          ],
+          "mean_atomic_mass_amu": [
+            36.53233946906538,
+            36.52504909081331
+          ],
+          "std_atomic_mass_amu": [
+            45.40862643849149,
+            45.39646870530239
+          ]
+        }
+      },
+      {
+        "id": "s2v",
+        "archive_member": "test_randomized_cifs/s2v.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.6669930393964613,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.022198570000000008,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Fe1.52La23.6Li44.56Zr16.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 44.56800000000001,
+          "Fe": 1.512,
+          "La": 23.616000000000014,
+          "Zr": 16.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          220,
+          220
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 7.662040128311731e-05,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          12.028341581151524,
+          12.027282375306054
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0010592058454701458,
+        "cell_volume_per_atom_relative_difference": 8.805917576616938e-05,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.1074416556583,
+            16.110029940119762
+          ],
+          "std_atomic_number": [
+            18.578996775820737,
+            18.582228785272193
+          ],
+          "mean_atomic_mass_amu": [
+            36.701182584764425,
+            36.70802938710814
+          ],
+          "std_atomic_mass_amu": [
+            45.44699943656531,
+            45.45536856567297
+          ]
+        }
+      },
+      {
+        "id": "4p7",
+        "archive_member": "test_randomized_cifs/4p7.cif",
+        "official_close_match_flag": true,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.14556881949568815,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": false,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.18461539000000005,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li3.0Cl1.0O1.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 3.0,
+          "Cl": 1.0,
+          "O": 1.0
+        },
+        "space_group_number": [
+          221,
+          221
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          11.9552942,
+          11.940046220925046
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.015247979074954898,
+        "cell_volume_per_atom_relative_difference": 0.0012754164656989283,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "lk8",
+        "archive_member": "test_randomized_cifs/lk8.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.701484054640309,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.025559714999999997,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La0.55Li0.45Ti0.9Al0.1O3.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.558,
+          "Li": 0.442,
+          "Ti": 0.909,
+          "Al": 0.09,
+          "O": 3.0
+        },
+        "space_group_number": [
+          221,
+          221
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0019963992798559746,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.09,
+            0.08841768353670733
+          ],
+          "O": [
+            0.6,
+            0.6001200240048009
+          ],
+          "Al": [
+            0.02,
+            0.018003600720144026
+          ],
+          "Ti": [
+            0.18,
+            0.18183636727345467
+          ],
+          "La": [
+            0.11000000000000001,
+            0.11162232446489298
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.5894249669746,
+          11.591743315637725
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0023183486631257466,
+        "cell_volume_per_atom_relative_difference": 0.00020004000800144512,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.56,
+            15.663132626525304
+          ],
+          "std_atomic_number": [
+            15.65204140040525,
+            15.734740527905435
+          ],
+          "mean_atomic_mass_amu": [
+            34.659622472,
+            34.90994513582716
+          ],
+          "std_atomic_mass_amu": [
+            38.80773494653093,
+            39.020974440832056
+          ]
+        }
+      },
+      {
+        "id": "lud",
+        "archive_member": "test_randomized_cifs/lud.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.6984104773414133,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.03046416999999998,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La0.6Li0.4Ti0.8Al0.2O3.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.642,
+          "Li": 0.358,
+          "Ti": 0.87,
+          "Al": 0.129,
+          "O": 3.0
+        },
+        "space_group_number": [
+          221,
+          221
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.014194838967793562,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.08,
+            0.07161432286457291
+          ],
+          "O": [
+            0.6,
+            0.6001200240048009
+          ],
+          "Al": [
+            0.04,
+            0.02580516103220644
+          ],
+          "Ti": [
+            0.16,
+            0.17403480696139226
+          ],
+          "La": [
+            0.12,
+            0.1284256851370274
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.5176954862226,
+          11.519999486119822
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0023039998972222975,
+        "cell_volume_per_atom_relative_difference": 0.00020004000800145555,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.92,
+            16.500300060012002
+          ],
+          "std_atomic_number": [
+            16.116873145867967,
+            16.511852656973872
+          ],
+          "mean_atomic_mass_amu": [
+            35.561557944,
+            36.96445253438688
+          ],
+          "std_atomic_mass_amu": [
+            40.0487941647557,
+            41.06313384782241
+          ]
+        }
+      },
+      {
+        "id": "vlm",
+        "archive_member": "test_randomized_cifs/vlm.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.6258502486498484,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.06407088999999999,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La0.65Li0.35Ti0.7Al0.3O3.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.651,
+          "Li": 0.349,
+          "Ti": 0.702,
+          "Al": 0.297,
+          "O": 3.0
+        },
+        "space_group_number": [
+          221,
+          221
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0005881176235247032,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.06999999999999999,
+            0.06981396279255851
+          ],
+          "O": [
+            0.6,
+            0.600120024004801
+          ],
+          "Al": [
+            0.06,
+            0.059411882376475295
+          ],
+          "Ti": [
+            0.13999999999999999,
+            0.14042808561712342
+          ],
+          "La": [
+            0.13,
+            0.13022604520904182
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.4971281777168,
+          11.499428063329466
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0022998856126665856,
+        "cell_volume_per_atom_relative_difference": 0.00020004000800166055,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.279999999999998,
+            16.295059011802362
+          ],
+          "std_atomic_number": [
+            16.560845389049437,
+            16.571640879762263
+          ],
+          "mean_atomic_mass_amu": [
+            36.463493416,
+            36.500144215683136
+          ],
+          "std_atomic_mass_amu": [
+            41.232809281328855,
+            41.26022694045546
+          ]
+        }
+      },
+      {
+        "id": "gwu",
+        "archive_member": "test_randomized_cifs/gwu.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.5881549972585444,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.09230491999999998,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "La0.7Li0.3Ti0.6Al0.4O3.0",
+        "cif_unit_cell_element_counts": {
+          "La": 0.708,
+          "Li": 0.292,
+          "Ti": 0.6063936063936064,
+          "Al": 0.39360639360639366,
+          "O": 3.0
+        },
+        "space_group_number": [
+          221,
+          221
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.001600000000000018,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.06,
+            0.058399999999999994
+          ],
+          "Al": [
+            0.08,
+            0.07872127872127874
+          ],
+          "Ti": [
+            0.12,
+            0.12127872127872127
+          ],
+          "La": [
+            0.13999999999999999,
+            0.1416
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.3884413060096,
+          11.3884413060096
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.64,
+            16.73790849150849
+          ],
+          "std_atomic_number": [
+            16.985593896004932,
+            17.05371562248782
+          ],
+          "mean_atomic_mass_amu": [
+            37.365428888,
+            37.60327872390809
+          ],
+          "std_atomic_mass_amu": [
+            42.364563413525275,
+            42.54078487828024
+          ]
+        }
+      },
+      {
+        "id": "4ie",
+        "archive_member": "test_randomized_cifs/4ie.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.7918723142406602,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.022507164999999985,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li48.4Ga2.0La24.0Zr16.0O94.4F1.6",
+        "cif_unit_cell_element_counts": {
+          "Li": 47.27999999999998,
+          "La": 24.0,
+          "Ga": 4.5600000000000005,
+          "Zr": 16.0,
+          "O": 94.36800000000004,
+          "F": 1.6319999999999972
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.013546365823164265,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.259656652360515,
+            0.25170357751277667
+          ],
+          "O": [
+            0.5064377682403434,
+            0.5023850085178877
+          ],
+          "F": [
+            0.008583690987124463,
+            0.008688245315161824
+          ],
+          "Ga": [
+            0.01072961373390558,
+            0.024275979557069845
+          ],
+          "Zr": [
+            0.08583690987124463,
+            0.08517887563884155
+          ],
+          "La": [
+            0.12875536480686695,
+            0.12776831345826234
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.702119296591606,
+          11.61240969380683
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.08970960278477591,
+        "cell_volume_per_atom_relative_difference": 0.0076660988074959205,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          6,
+          6
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.012875536480685,
+            16.29488926746167
+          ],
+          "std_atomic_number": [
+            18.57440222218598,
+            18.556211148206827
+          ],
+          "mean_atomic_mass_amu": [
+            36.53136526351931,
+            37.16066553035775
+          ],
+          "std_atomic_mass_amu": [
+            45.403572911701225,
+            45.332760143699105
+          ]
+        }
+      },
+      {
+        "id": "9o6",
+        "archive_member": "test_randomized_cifs/9o6.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.7317365544823676,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.024990734999999986,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li52.0La24.0Zr14.0Mo2.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 46.751999999999946,
+          "La": 24.0,
+          "Zr": 13.942399999999994,
+          "Mo": 2.0576000000000003,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.020773646974670268,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.2765957446808511,
+            0.2558220977061808
+          ],
+          "O": [
+            0.5106382978723404,
+            0.52530204867799
+          ],
+          "Zr": [
+            0.07446808510638298,
+            0.07629136753633338
+          ],
+          "Mo": [
+            0.010638297872340425,
+            0.011258973909998254
+          ],
+          "La": [
+            0.1276595744680851,
+            0.1313255121694975
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.566840401657533,
+          11.898999712789008
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.3321593111314751,
+        "cell_volume_per_atom_relative_difference": 0.028716511994397065,
+        "cell_volume_per_atom_mismatch": true,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.617021276595743,
+            15.979968481877082
+          ],
+          "std_atomic_number": [
+            18.546150821023296,
+            18.68598256413159
+          ],
+          "mean_atomic_mass_amu": [
+            35.636285531914886,
+            36.46180043775172
+          ],
+          "std_atomic_mass_amu": [
+            45.330798714183494,
+            45.713623659035875
+          ]
+        }
+      },
+      {
+        "id": "lpt",
+        "archive_member": "test_randomized_cifs/lpt.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1925290185612737,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.079905215,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li32.0Nd24.0Te8.0Sb8.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 32.039999999999964,
+          "Nd": 24.0,
+          "Te": 8.0,
+          "Sb": 8.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00019269788372366925,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.19047619047619047,
+            0.19066888835991413
+          ],
+          "O": [
+            0.5714285714285714,
+            0.5712925493930018
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.967715206661977,
+          11.964866428940804
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0028487777211729792,
+        "cell_volume_per_atom_relative_difference": 0.00023803856224679978,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            18.61904761904762,
+            18.615329683408717
+          ],
+          "mean_atomic_mass_amu": [
+            42.94489523809523,
+            42.93632492263747
+          ]
+        }
+      },
+      {
+        "id": "j5g",
+        "archive_member": "test_randomized_cifs/j5g.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.25956446831282953,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.036851840000000025,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li48.0La24.0Nb12.0Y4.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 47.66399999999994,
+          "La": 24.0,
+          "Nb": 12.0,
+          "Y": 4.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.001352185654711846,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.2608695652173913,
+            0.25951737956267945
+          ],
+          "O": [
+            0.5217391304347826,
+            0.522693614426344
+          ],
+          "Nb": [
+            0.06521739130434782,
+            0.065336701803293
+          ],
+          "La": [
+            0.13043478260869565,
+            0.130673403606586
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.703726567757915,
+          11.725137688754776
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.021411120996861044,
+        "cell_volume_per_atom_relative_difference": 0.001829427650492588,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.913043478260867,
+            15.936666957052015
+          ],
+          "std_atomic_number": [
+            18.681339313960525,
+            18.690245742171495
+          ],
+          "mean_atomic_mass_amu": [
+            36.26816108695652,
+            36.321813006359456
+          ],
+          "std_atomic_mass_amu": [
+            45.631231118883306,
+            45.655691513718885
+          ]
+        }
+      },
+      {
+        "id": "dvb",
+        "archive_member": "test_randomized_cifs/dvb.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.15123438191498617,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.007100839999999978,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li41.6La24.0Nb15.2Y0.8O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 41.63231999999998,
+          "La": 24.0,
+          "Nb": 15.199999999999996,
+          "Y": 0.8000000000000002,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00013933021619896846,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.23423423423423426,
+            0.23437356445043322
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.86816868232937,
+          11.866009282441935
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0021593998874358533,
+        "cell_volume_per_atom_relative_difference": 0.00018194887056593697,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.414414414414416,
+            16.41197367686241
+          ],
+          "mean_atomic_mass_amu": [
+            37.39707734234234,
+            37.39153589346803
+          ]
+        }
+      },
+      {
+        "id": "cti",
+        "archive_member": "test_randomized_cifs/cti.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1567429808673301,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.013932845000000015,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li43.2La24.0Nb14.4Y1.6O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 43.23167999999995,
+          "La": 24.0,
+          "Nb": 14.400000000000004,
+          "Y": 1.6000000000000003,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00013414401484609928,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.2410714285714286,
+            0.2412055725862747
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.786989379891832,
+          11.784905976870924
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0020834030209080368,
+        "cell_volume_per_atom_relative_difference": 0.00017675446662081883,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.285714285714285,
+            16.28336597637204
+          ],
+          "mean_atomic_mass_amu": [
+            37.107288571428576,
+            37.1019565451822
+          ]
+        }
+      },
+      {
+        "id": "2d1",
+        "archive_member": "test_randomized_cifs/2d1.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.1765720406963899,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.011244755000000006,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li44.0La24.0Nb14.0Y2.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 44.03231999999993,
+          "La": 24.0,
+          "Nb": 14.0,
+          "Y": 2.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00013563984264328144,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.24444444444444444,
+            0.24458008428708772
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.810492950852044,
+          11.808372691933144
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0021202589189002197,
+        "cell_volume_per_atom_relative_difference": 0.000179523321145309,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.22222222222222,
+            16.219848524975966
+          ],
+          "mean_atomic_mass_amu": [
+            36.964326111111106,
+            36.95893622389581
+          ]
+        }
+      },
+      {
+        "id": "wa3",
+        "archive_member": "test_randomized_cifs/wa3.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.8978238628916716,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.004322199999999995,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li51.2Al1.6La24Zr16O96",
+        "cif_unit_cell_element_counts": {
+          "Li": 51.16799999999997,
+          "Al": 1.5600000000000012,
+          "La": 24.0,
+          "Zr": 16.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.000208712170470058,
+        "changed_atomic_fractions": {
+          "O": [
+            0.5084745762711864,
+            0.5086685600440847
+          ],
+          "Al": [
+            0.00847457627118644,
+            0.008265864100716383
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.526898782198092,
+          11.53129631045208
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.004397528253987204,
+        "cell_volume_per_atom_relative_difference": 0.0003815014200331712,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.627118644067796,
+            15.62981645542792
+          ],
+          "std_atomic_number": [
+            18.46104309178577,
+            18.46379231818062
+          ],
+          "mean_atomic_mass_amu": [
+            35.634572784745764,
+            35.6412719268789
+          ],
+          "std_atomic_mass_amu": [
+            45.13901022346473,
+            45.14589739021835
+          ]
+        }
+      },
+      {
+        "id": "l6h",
+        "archive_member": "test_randomized_cifs/l6h.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 1,
+          "fast_conductor_probability": 0.9290136442181451,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.009037130000000008,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li49.6Al1.6La24Zr14.4Ta1.6O96",
+        "cif_unit_cell_element_counts": {
+          "Li": 51.16799999999995,
+          "Al": 1.6320000000000012,
+          "La": 24.0,
+          "Zr": 14.400000000000004,
+          "Ta": 1.6000000000000003,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.006059684195277193,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.26495726495726496,
+            0.27101694915254215
+          ],
+          "O": [
+            0.5128205128205129,
+            0.5084745762711865
+          ],
+          "Zr": [
+            0.07692307692307693,
+            0.076271186440678
+          ],
+          "La": [
+            0.12820512820512822,
+            0.12711864406779663
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.622728215341882,
+          11.524230518601698
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.09849769674018383,
+        "cell_volume_per_atom_relative_difference": 0.008474576271186302,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          6,
+          6
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.01709401709402,
+            15.90847457627119
+          ],
+          "std_atomic_number": [
+            19.111898520543082,
+            19.067411973521676
+          ],
+          "mean_atomic_mass_amu": [
+            36.64668776581197,
+            36.39834135061018
+          ],
+          "std_atomic_mass_amu": [
+            46.91428521761756,
+            46.79295708758815
+          ]
+        }
+      },
+      {
+        "id": "duf",
+        "archive_member": "test_randomized_cifs/duf.cif",
+        "official_close_match_flag": true,
+        "label": 1,
+        "csv_prediction": 1,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.26322350455559473,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.11809054499999999,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li52.8La24.0Zr12.8Sb3.2O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 70.53600000000012,
+          "La": 5.975999999999999,
+          "Zr": 2.6719999999999993,
+          "Sb": 0.11200000000000004,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.12272123934876683,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.2796610169491525,
+            0.40238225629791935
+          ],
+          "O": [
+            0.5084745762711864,
+            0.5476451259583787
+          ],
+          "Zr": [
+            0.06779661016949153,
+            0.015242789339174868
+          ],
+          "Sb": [
+            0.01694915254237288,
+            0.0006389193136181086
+          ],
+          "La": [
+            0.1271186440677966,
+            0.03409090909090907
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          11.528366502717736,
+          12.326568114582003
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.7982016118642665,
+        "cell_volume_per_atom_relative_difference": 0.06923804961232763,
+        "cell_volume_per_atom_mismatch": true,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.728813559322033,
+            8.173786053304124
+          ],
+          "std_atomic_number": [
+            18.794455104103314,
+            10.42456740764779
+          ],
+          "mean_atomic_mass_amu": [
+            35.982297033898305,
+            17.758645449525368
+          ],
+          "std_atomic_mass_amu": [
+            46.01193257730353,
+            25.264556273091287
+          ]
+        }
+      },
+      {
+        "id": "3rh",
+        "archive_member": "test_randomized_cifs/3rh.cif",
+        "official_close_match_flag": false,
+        "label": 1,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.4381908803328431,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.06406737000000004,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li52.0La24.0Nb10.0Y6.0O96.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 52.00032000000007,
+          "La": 24.0,
+          "Nb": 10.0,
+          "Y": 6.0,
+          "O": 96.0
+        },
+        "space_group_number": [
+          230,
+          230
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 1.231324296413483e-06,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          11.548636712458896,
+          11.548617055238372
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 1.965722052332808e-05,
+        "cell_volume_per_atom_relative_difference": 1.7021247626675695e-06,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "cubic",
+          "cubic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          5,
+          5
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "ar1",
+        "archive_member": "test_randomized_cifs/ar1.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2782964629124341,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.12076328499999997,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Sn4.0S12.0Se4.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.007999999999992,
+          "Sn": 4.0,
+          "S": 11.656000000000002,
+          "Se": 4.344
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.00962749018736564,
+        "changed_atomic_fractions": {
+          "Li": [
+            0.4444444444444444,
+            0.44456787380582075
+          ],
+          "S": [
+            0.3333333333333333,
+            0.3237058431459677
+          ],
+          "Se": [
+            0.1111111111111111,
+            0.12063985780937572
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          20.415941707864583,
+          20.411405839900166
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.004535867964417406,
+        "cell_volume_per_atom_relative_difference": 0.00022217285047743397,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            15.999999999999998,
+            16.16907353921351
+          ],
+          "std_atomic_number": [
+            15.477582354991865,
+            15.575834048867284
+          ],
+          "mean_atomic_mass_amu": [
+            35.736555555555555,
+            36.178166185292156
+          ],
+          "std_atomic_mass_amu": [
+            36.681869079094135,
+            36.91841472660062
+          ]
+        }
+      },
+      {
+        "id": "cz2",
+        "archive_member": "test_randomized_cifs/cz2.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.27790198935008126,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.34522222,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Sn4.0S4.0Se12.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Sn": 4.0,
+          "S": 3.571999999999999,
+          "Se": 12.428000000000003
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.011888888888889004,
+        "changed_atomic_fractions": {
+          "S": [
+            0.1111111111111111,
+            0.0992222222222222
+          ],
+          "Se": [
+            0.3333333333333333,
+            0.3452222222222223
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          22.029185732910477,
+          22.029185732910477
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            19.999999999999996,
+            20.214
+          ],
+          "std_atomic_number": [
+            17.191729277636835,
+            17.252529077081874
+          ],
+          "mean_atomic_mass_amu": [
+            46.157666666666664,
+            46.71519611111112
+          ],
+          "std_atomic_mass_amu": [
+            40.609538178993255,
+            40.73395318517582
+          ]
+        }
+      },
+      {
+        "id": "klr",
+        "archive_member": "test_randomized_cifs/klr.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2981730346522538,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.224777775,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Sn4.0S8.0Se8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Sn": 4.0,
+          "S": 7.907999999999999,
+          "Se": 8.092
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0025555555555555887,
+        "changed_atomic_fractions": {
+          "S": [
+            0.2222222222222222,
+            0.21966666666666662
+          ],
+          "Se": [
+            0.2222222222222222,
+            0.2247777777777778
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          21.281811933141757,
+          21.281811933141757
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            17.999999999999996,
+            18.046
+          ],
+          "std_atomic_number": [
+            16.478942792411033,
+            16.49840718237841
+          ],
+          "mean_atomic_mass_amu": [
+            40.947111111111106,
+            41.06695388888889
+          ],
+          "std_atomic_mass_amu": [
+            39.04480688031364,
+            39.08930410428558
+          ]
+        }
+      },
+      {
+        "id": "mn3",
+        "archive_member": "test_randomized_cifs/mn3.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.26182027861503115,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.44444444,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Sn4.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Sn": 4.0,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 0.0,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          22.782008760451664,
+          22.782008760451664
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "o0a",
+        "archive_member": "test_randomized_cifs/o0a.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2765137177679989,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.47133333,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge3.0Sn1.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.000000000000004,
+          "Ge": 3.032,
+          "Sn": 0.968,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0008888888888888974,
+        "changed_atomic_fractions": {
+          "Ge": [
+            0.08333333333333333,
+            0.08422222222222223
+          ],
+          "Sn": [
+            0.027777777777777776,
+            0.02688888888888889
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          21.91438951242346,
+          21.91438951242346
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            20.5,
+            20.483999999999998
+          ],
+          "std_atomic_number": [
+            15.88412904617548,
+            15.863457994887355
+          ],
+          "mean_atomic_mass_amu": [
+            47.52905555555555,
+            47.48810444444444
+          ],
+          "std_atomic_mass_amu": [
+            36.93955941951696,
+            36.886123586974215
+          ]
+        }
+      },
+      {
+        "id": "qer",
+        "archive_member": "test_randomized_cifs/qer.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.30955659303551186,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.47863248,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge2.0Sn2.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Ge": 1.956,
+          "Sn": 2.044,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0012222222222222287,
+        "changed_atomic_fractions": {
+          "Ge": [
+            0.05555555555555555,
+            0.05433333333333333
+          ],
+          "Sn": [
+            0.05555555555555555,
+            0.05677777777777778
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          22.193501364984538,
+          22.193501364984538
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            21.0,
+            21.022
+          ],
+          "std_atomic_number": [
+            16.50925666271972,
+            16.53587226473268
+          ],
+          "mean_atomic_mass_amu": [
+            48.80877777777777,
+            48.86508555555555
+          ],
+          "std_atomic_mass_amu": [
+            38.55022997561544,
+            38.618582654718786
+          ]
+        }
+      },
+      {
+        "id": "aab",
+        "archive_member": "test_randomized_cifs/aab.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.3108752676820554,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.46388888,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge1.0Sn3.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Ge": 0.7,
+          "Sn": 3.3,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.008333333333333331,
+        "changed_atomic_fractions": {
+          "Ge": [
+            0.027777777777777776,
+            0.019444444444444445
+          ],
+          "Sn": [
+            0.08333333333333333,
+            0.09166666666666666
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          22.48088500395494,
+          22.48088500395494
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            21.5,
+            21.65
+          ],
+          "std_atomic_number": [
+            17.09694579612264,
+            17.266529922238444
+          ],
+          "mean_atomic_mass_amu": [
+            50.088499999999996,
+            50.47241666666666
+          ],
+          "std_atomic_mass_amu": [
+            40.0553870822085,
+            40.48813994923218
+          ]
+        }
+      },
+      {
+        "id": "1ty",
+        "archive_member": "test_randomized_cifs/1ty.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2625203945568,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": false,
+            "reasons": [],
+            "nearest_composition_distance": 0.117555555,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge4.0S12.0Se4.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 15.999999999999993,
+          "Ge": 4.0,
+          "S": 11.768,
+          "Se": 4.232
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.006444444444444475,
+        "changed_atomic_fractions": {
+          "S": [
+            0.3333333333333333,
+            0.32688888888888895
+          ],
+          "Se": [
+            0.1111111111111111,
+            0.11755555555555558
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          19.340361199955506,
+          19.34036119995551
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 3.552713678800501e-15,
+        "cell_volume_per_atom_relative_difference": 1.8369427758198612e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            14.000000000000002,
+            14.116000000000003
+          ],
+          "std_atomic_number": [
+            11.642832797715322,
+            11.751344585006242
+          ],
+          "mean_atomic_mass_amu": [
+            30.61766666666666,
+            30.919878888888892
+          ],
+          "std_atomic_mass_amu": [
+            26.565391416486055,
+            26.845404349550925
+          ]
+        }
+      },
+      {
+        "id": "zv5",
+        "archive_member": "test_randomized_cifs/zv5.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2859027992876767,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.23322222,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge4.0S8.0Se8.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.0,
+          "Ge": 4.0,
+          "S": 7.603999999999999,
+          "Se": 8.396
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.011000000000000038,
+        "changed_atomic_fractions": {
+          "S": [
+            0.2222222222222222,
+            0.2112222222222222
+          ],
+          "Se": [
+            0.2222222222222222,
+            0.23322222222222225
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          20.11805297905984,
+          20.11805297905984
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 0.0,
+        "cell_volume_per_atom_relative_difference": 0.0,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            16.0,
+            16.198
+          ],
+          "std_atomic_number": [
+            13.249737942901193,
+            13.382090701962664
+          ],
+          "mean_atomic_mass_amu": [
+            35.828222222222216,
+            36.34406722222222
+          ],
+          "std_atomic_mass_amu": [
+            30.62681759786412,
+            30.952284772684713
+          ]
+        }
+      },
+      {
+        "id": "xk3",
+        "archive_member": "test_randomized_cifs/xk3.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.2128074007284661,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.44444444,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge4.0Se16.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 16.000000000000007,
+          "Ge": 4.0,
+          "Se": 16.0
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": false,
+        "max_atomic_fraction_difference": 1.1102230246251565e-16,
+        "changed_atomic_fractions": {},
+        "cell_volume_per_atom_angstrom3": [
+          21.648344862696817,
+          21.64834486269681
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 7.105427357601002e-15,
+        "cell_volume_per_atom_relative_difference": 3.2822035137867127e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          3,
+          3
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {}
+      },
+      {
+        "id": "i4l",
+        "archive_member": "test_randomized_cifs/i4l.cif",
+        "official_close_match_flag": false,
+        "label": 0,
+        "csv_prediction": 0,
+        "cif_prediction": {
+          "fast_conductor": 0,
+          "fast_conductor_probability": 0.24754166619671614,
+          "threshold_s_per_cm": 0.0001,
+          "has_partial_occupancies": true,
+          "cif_parser_warnings": [],
+          "training_coverage": {
+            "warning": true,
+            "reasons": [
+              {
+                "code": "distant_composition"
+              }
+            ],
+            "nearest_composition_distance": 0.329888885,
+            "composition_distance_threshold": 0.2
+          }
+        },
+        "csv_unit_cell_composition": "Li16.0Ge4.0S4.0Se12.0",
+        "cif_unit_cell_element_counts": {
+          "Li": 15.999999999999993,
+          "Ge": 4.0,
+          "S": 4.124,
+          "Se": 11.876
+        },
+        "space_group_number": [
+          62,
+          62
+        ],
+        "space_group_number_mismatch": false,
+        "composition_mismatch": true,
+        "max_atomic_fraction_difference": 0.0034444444444444583,
+        "changed_atomic_fractions": {
+          "S": [
+            0.1111111111111111,
+            0.11455555555555556
+          ],
+          "Se": [
+            0.3333333333333333,
+            0.32988888888888895
+          ]
+        },
+        "cell_volume_per_atom_angstrom3": [
+          20.918782338903142,
+          20.91878233890315
+        ],
+        "cell_volume_per_atom_absolute_difference_angstrom3": 7.105427357601002e-15,
+        "cell_volume_per_atom_relative_difference": 3.3966734977622835e-16,
+        "cell_volume_per_atom_mismatch": false,
+        "crystal_system": [
+          "orthorhombic",
+          "orthorhombic"
+        ],
+        "crystal_system_mismatch": false,
+        "element_count": [
+          4,
+          4
+        ],
+        "element_count_mismatch": false,
+        "changed_weighted_summaries": {
+          "mean_atomic_number": [
+            17.999999999999996,
+            17.938000000000002
+          ],
+          "std_atomic_number": [
+            14.406788523316205,
+            14.376498584688678
+          ],
+          "mean_atomic_mass_amu": [
+            41.038777777777774,
+            40.87725055555556
+          ],
+          "std_atomic_mass_amu": [
+            33.406348391278954,
+            33.3358998904251
+          ]
+        }
+      }
+    ]
+  },
+  "csv_overlap_sensitivity": {
+    "grouping": "True Composition atomic fractions rounded to eight decimal places",
+    "fit_policy": "Used the saved model and fit the other candidates and baseline on the official train set.",
+    "overlap_groups": [
+      {
+        "normalized_atomic_fractions": {
+          "Ge": 0.04191617,
+          "Li": 0.4011976,
+          "P": 0.07784431,
+          "S": 0.47904192
+        },
+        "train": [
+          {
+            "ID": "52b",
+            "Reduced Composition": "Li10.05Ge1.05P1.95S12",
+            "True Composition": "Li20.1Ge2.1P3.9S24.0",
+            "Ionic conductivity (S cm-1)": "0.0122"
+          }
+        ],
+        "test": [
+          {
+            "ID": "2yl",
+            "Reduced Composition": "Li3.35Ge0.35P0.65S4",
+            "True Composition": "Li80.4Ge8.4P15.6S96.0",
+            "Ionic conductivity (S cm-1)": "0.00154"
+          }
+        ]
+      },
+      {
+        "normalized_atomic_fractions": {
+          "Ge": 0.04761905,
+          "Li": 0.4047619,
+          "P": 0.07142857,
+          "S": 0.47619048
+        },
+        "train": [
+          {
+            "ID": "8po",
+            "Reduced Composition": "Li10.2Ge1.2P1.8S12",
+            "True Composition": "Li20.4Ge2.4P3.6S24.0",
+            "Ionic conductivity (S cm-1)": "0.0132"
+          }
+        ],
+        "test": [
+          {
+            "ID": "mvq",
+            "Reduced Composition": "Li3.4Ge0.4P0.6S4",
+            "True Composition": "Li81.6Ge9.6P14.4S96.0",
+            "Ionic conductivity (S cm-1)": "0.000654"
+          }
+        ]
+      }
+    ],
+    "overlapping_test_predictions": {
+      "LogisticRegression": {
+        "mvq": 0,
+        "2yl": 0
+      },
+      "RandomForestClassifier": {
+        "mvq": 1,
+        "2yl": 1
+      },
+      "HistGradientBoostingClassifier": {
+        "mvq": 1,
+        "2yl": 0
+      },
+      "Majority (most frequent)": {
+        "mvq": 0,
+        "2yl": 0
+      }
+    },
+    "official_test": {
+      "counts": {
+        "rows": 121,
+        "slow": 68,
+        "fast": 53
+      },
+      "metrics": {
+        "LogisticRegression": {
+          "accuracy": 0.6528925619834711,
+          "precision": 0.5873015873015873,
+          "recall": 0.6981132075471698,
+          "f1": 0.6379310344827587,
+          "confusion_matrix": [
+            [
+              42,
+              26
+            ],
+            [
+              16,
+              37
+            ]
+          ]
+        },
+        "RandomForestClassifier": {
+          "accuracy": 0.7933884297520661,
+          "precision": 0.78,
+          "recall": 0.7358490566037735,
+          "f1": 0.7572815533980582,
+          "confusion_matrix": [
+            [
+              57,
+              11
+            ],
+            [
+              14,
+              39
+            ]
+          ]
+        },
+        "HistGradientBoostingClassifier": {
+          "accuracy": 0.7355371900826446,
+          "precision": 0.6981132075471698,
+          "recall": 0.6981132075471698,
+          "f1": 0.6981132075471698,
+          "confusion_matrix": [
+            [
+              52,
+              16
+            ],
+            [
+              16,
+              37
+            ]
+          ]
+        },
+        "Majority (most frequent)": {
+          "accuracy": 0.5619834710743802,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              68,
+              0
+            ],
+            [
+              53,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "test_without_overlap": {
+      "counts": {
+        "rows": 119,
+        "slow": 68,
+        "fast": 51
+      },
+      "metrics": {
+        "LogisticRegression": {
+          "accuracy": 0.6638655462184874,
+          "precision": 0.5873015873015873,
+          "recall": 0.7254901960784313,
+          "f1": 0.6491228070175439,
+          "confusion_matrix": [
+            [
+              42,
+              26
+            ],
+            [
+              14,
+              37
+            ]
+          ]
+        },
+        "RandomForestClassifier": {
+          "accuracy": 0.7899159663865546,
+          "precision": 0.7708333333333334,
+          "recall": 0.7254901960784313,
+          "f1": 0.7474747474747475,
+          "confusion_matrix": [
+            [
+              57,
+              11
+            ],
+            [
+              14,
+              37
+            ]
+          ]
+        },
+        "HistGradientBoostingClassifier": {
+          "accuracy": 0.7394957983193278,
+          "precision": 0.6923076923076923,
+          "recall": 0.7058823529411765,
+          "f1": 0.6990291262135923,
+          "confusion_matrix": [
+            [
+              52,
+              16
+            ],
+            [
+              15,
+              36
+            ]
+          ]
+        },
+        "Majority (most frequent)": {
+          "accuracy": 0.5714285714285714,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              68,
+              0
+            ],
+            [
+              51,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  }
+}
